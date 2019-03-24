@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title>Vedant Builders</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- Custom fonts for this template -->
+		<link href="vendor/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+		
+		<link href="css/custom-fonts.css" rel="stylesheet" type="text/css">
+		
+		<!-- Custom styles for this template -->
+		<link href="css/agency.min.css" rel="stylesheet">
+		
+		<style>
+			.pogoda-hld {
+				position: absolute;
+				right: 80px;
+				top: 15px;
+				z-index: 999;
+				height: 55px;
+				transition: right .4s ease 0;
+				z-index: 9999;
+				cursor: pointer
+			}
+			.pogoda-hld .info-btn.call-btn {
+				border-radius: 50%;
+				cursor: pointer;
+				height: 45px;
+				padding: 11px 13px;
+				position: absolute;
+				right: 0;
+				width: 45px
+			}
+			.info-btn.call-btn, .btn.gallery-btn, .btn.content-btn {
+				-webkit-animation: dot-pulse-idle 4s cubic-bezier(.19, 1, .22, 1) infinite both;
+				animation: dot-pulse-idle 4s cubic-bezier(.19, 1, .22, 1) infinite both
+			}
+			@-webkit-keyframes dot-pulse-idle {
+			0% {
+			box-shadow:0 0 0 0 #fff
+			}
+			50% {
+			box-shadow:0 0 0 40px rgba(255,255,255,0)
+			}
+			}
+			@keyframes dot-pulse-idle {
+			0% {
+			box-shadow:0 0 0 0 #fff
+			}
+			50% {
+			box-shadow:0 0 0 40px rgba(255,255,255,0)
+			}
+			}
+			.pogoda-hld .close, .pogoda-hld .open {
+				color: #fff;
+				margin-top: 45px;
+				position: absolute;
+				right: -45px;
+				width: 222px
+			}
+			.pogoda-hld .open {
+				display: none
+			}
+			.pogoda-hld.book {
+				top: 16%!important;
+				position: fixed!important;
+				right: 35px!important;
+				transition: all 0.5s ease 0s
+			}
+			.pogoda-hld.book .close, .pogoda-hld.book .open {
+				right: 0;
+				width: 165px
+			}
+			.book .info-btn.call-btn {
+				transform: rotate(0deg);
+				border: none
+			}
+			.pogoda-hld .close .txt-hld, .pogoda-hld .open .txt-hld {
+				display: inline-block;
+				font-size: 15px;
+				font-weight: 800;
+				padding: 10px 10px 0 0;
+				text-transform: uppercase
+			}
+			.call-btn i {
+				color: #f2f2f2;
+				font-size: 18px;
+				line-height: 18px
+			}
+			.pogoda-hld:hover .open {
+				display: block
+			}
+			@media (min-width:1920px) {
+			.pogoda-hld .close, .pogoda-hld .open {
+				margin-top: 0;
+				right: 0
+			}
+			}
+			@media (min-width:1281px) and (max-width:1366px) {
+			.pogoda-hld {
+				top: 9px;
+				right: 60px
+			}
+			}
+			@media (min-width:1025px) and (max-width:1280px) {
+			.pogoda-hld {
+				right: 30px
+			}
+			}
+			@media (min-width:981px) and (max-width:1024px) {
+			.pogoda-hld {
+				right: 30px;
+				top: 15px;
+			}
+
+			}
+			@media (min-width:801px) and (max-width:980px) {
+			.pogoda-hld {
+				right: 50px;
+				top: 19px
+			}
+			}
+			@media (min-width:769px) and (max-width:800px) {
+			.pogoda-hld {
+				right: 37px;
+				top: 75px
+			}
+			.pogoda-hld .close, .pogoda-hld .open {
+				margin-top: -2px;
+				right: 5px
+			}
+			}
+			@media (min-width:737px) and (max-width:768px) {
+			.pogoda-hld {
+				right: 17px;
+				top: 75px
+			}
+			}
+			@media (max-width:500px) {
+			.pogoda-hld {
+				right: 10px;
+				top: 21px
+			}
+			}
+			
+			.fa-contact{transform:scaleX(-1);}
+		</style>
+	</head>
+	
+	<body>
+		<div class="pogoda-hld">
+			<div class="info-btn call-btn">
+				<a href="tel:+91 79 4020 0000"><i class="fa fa-phone fa-contact"></i></a>
+			</div>
+
+			<div class="open">
+				<div class="txt-hld"> 
+					Call: +91 79 4020 0000
+				</div>
+			</div>
+		</div>
+      
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+			<div class="container">
+				<a class="navbar-brand js-scroll-trigger" href="#page-top">Vedant Builders</a>
+				
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					Menu
+					<i class="fas fa-bars"></i>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav text-uppercase ml-auto">
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#services">Commercial</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#portfolio">Residential</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#team">Redevelopment</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#contact">Joint Development</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#about">About</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- Header -->
+		<header class="masthead">
+			<div class="container">
+				<div class="intro-text">
+					<div class="intro-lead-in">Welcome To Our Studio!</div>
+					
+					<div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+					
+					<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+				</div>
+			</div>
+		</header>
+	</body>
+</html>
