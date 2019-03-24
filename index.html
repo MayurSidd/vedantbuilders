@@ -19,7 +19,7 @@
 		<link href="css/agency.min.css" rel="stylesheet">
 		
 		<style>
-			.pogoda-hld {
+			.divContact {
 				position: absolute;
 				right: 80px;
 				top: 15px;
@@ -29,7 +29,7 @@
 				z-index: 9999;
 				cursor: pointer
 			}
-			.pogoda-hld .info-btn.call-btn {
+			.divContact .info-btn.call-btn {
 				border-radius: 50%;
 				cursor: pointer;
 				height: 45px;
@@ -58,23 +58,23 @@
 			box-shadow:0 0 0 40px rgba(255,255,255,0)
 			}
 			}
-			.pogoda-hld .close, .pogoda-hld .open {
+			.divContact .close, .divContact .open {
 				color: #fff;
 				margin-top: 45px;
 				position: absolute;
 				right: -45px;
 				width: 222px
 			}
-			.pogoda-hld .open {
+			.divContact .open {
 				display: none
 			}
-			.pogoda-hld.book {
+			.divContact.book {
 				top: 16%!important;
 				position: fixed!important;
 				right: 35px!important;
 				transition: all 0.5s ease 0s
 			}
-			.pogoda-hld.book .close, .pogoda-hld.book .open {
+			.divContact.book .close, .divContact.book .open {
 				right: 0;
 				width: 165px
 			}
@@ -82,7 +82,7 @@
 				transform: rotate(0deg);
 				border: none
 			}
-			.pogoda-hld .close .txt-hld, .pogoda-hld .open .txt-hld {
+			.divContact .close .txt-hld, .divContact .open .txt-hld {
 				display: inline-block;
 				font-size: 15px;
 				font-weight: 800;
@@ -94,68 +94,74 @@
 				font-size: 18px;
 				line-height: 18px
 			}
-			.pogoda-hld:hover .open {
+			.divContact:hover .open {
 				display: block
 			}
 			@media (min-width:1920px) {
-			.pogoda-hld .close, .pogoda-hld .open {
+			.divContact .close, .divContact .open {
 				margin-top: 0;
 				right: 0
 			}
 			}
 			@media (min-width:1281px) and (max-width:1366px) {
-			.pogoda-hld {
+			.divContact {
 				top: 9px;
 				right: 60px
 			}
 			}
 			@media (min-width:1025px) and (max-width:1280px) {
-			.pogoda-hld {
+			.divContact {
 				right: 30px
 			}
 			}
 			@media (min-width:981px) and (max-width:1024px) {
-			.pogoda-hld {
+			.divContact {
 				right: 30px;
 				top: 15px;
 			}
 
 			}
 			@media (min-width:801px) and (max-width:980px) {
-			.pogoda-hld {
+			.divContact {
 				right: 50px;
 				top: 19px
 			}
 			}
 			@media (min-width:769px) and (max-width:800px) {
-			.pogoda-hld {
+			.divContact {
 				right: 37px;
 				top: 75px
 			}
-			.pogoda-hld .close, .pogoda-hld .open {
+			.divContact .close, .divContact .open {
 				margin-top: -2px;
 				right: 5px
 			}
 			}
 			@media (min-width:737px) and (max-width:768px) {
-			.pogoda-hld {
+			.divContact {
 				right: 17px;
 				top: 75px
 			}
 			}
 			@media (max-width:500px) {
-			.pogoda-hld {
+			.divContact {
 				right: 10px;
 				top: 21px
 			}
 			}
 			
 			.fa-contact{transform:scaleX(-1);}
+			
+			.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus, .navbar .navbar-nav > li > a:active{
+				color: #fff;
+				border-bottom: 2px solid #fff;
+				background-color: transparent;
+			}
 		</style>
 	</head>
 	
 	<body>
-		<div class="pogoda-hld">
+		<div class="divContact">
 			<div class="info-btn call-btn">
 				<a href="tel:+91 79 4020 0000"><i class="fa fa-phone fa-contact"></i></a>
 			</div>
