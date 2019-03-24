@@ -97,57 +97,58 @@
 			.divContact:hover .open {
 				display: block
 			}
+			
 			@media (min-width:1920px) {
-			.divContact .close, .divContact .open {
-				margin-top: 0;
-				right: 0
+				.divContact .close, .divContact .open {
+					margin-top: 0;
+					right: 0
+				}
 			}
-			}
+			
 			@media (min-width:1281px) and (max-width:1366px) {
-			.divContact {
-				top: 9px;
-				right: 60px
+				.divContact {
+					top: 9px;
+					right: 60px
+				}
 			}
-			}
+			
 			@media (min-width:1025px) and (max-width:1280px) {
-			.divContact {
-				right: 30px
+				.divContact {
+					right: 30px;
+					top: 9px;
+				}
 			}
+			
+			@media (min-width:991px) and (max-width:1024px) {
+				.divContact {
+					right: 30px;
+					top: 9px;
+				}
 			}
-			@media (min-width:981px) and (max-width:1024px) {
-			.divContact {
-				right: 30px;
-				top: 15px;
+			
+			@media (min-width:800px) and (max-width:991px) {
+				.divContact {
+					right: 12px;
+					top: 60px;
+				}
 			}
-
+			
+			@media (min-width:701px) and (max-width:800px) {
+				.divContact {
+					right: 12px;
+					top: 60px;
+				}
 			}
-			@media (min-width:801px) and (max-width:980px) {
-			.divContact {
-				right: 50px;
-				top: 19px
+			
+			@media (min-width:769px) and (max-width:991px) {
+				.divContact .close, .divContact .open {
+					margin-top: 3px;
+					right: 0
+				}
 			}
-			}
-			@media (min-width:769px) and (max-width:800px) {
-			.divContact {
-				right: 37px;
-				top: 75px
-			}
-			.divContact .close, .divContact .open {
-				margin-top: -2px;
-				right: 5px
-			}
-			}
-			@media (min-width:737px) and (max-width:768px) {
-			.divContact {
-				right: 17px;
-				top: 75px
-			}
-			}
-			@media (max-width:500px) {
-			.divContact {
-				right: 10px;
-				top: 21px
-			}
+			
+			@media (max-width:701px){
+				.divContact .info-btn.call-btn{display: none;}
 			}
 			
 			.fa-contact{transform:scaleX(-1);}
@@ -156,6 +157,28 @@
 				color: #fff;
 				border-bottom: 2px solid #fff;
 				background-color: transparent;
+			}
+			
+			@media (max-width:991px) {
+				.navbar .navbar-nav > li > a {
+					font-size: 12px !important;
+					margin: 0 0px !important;
+				}
+			}
+			
+			@media (min-width:990px) and (max-width:1151px) {
+				.navbar .navbar-nav > li > a {
+					font-size: 13px !important;
+					margin: 0 5px !important;
+				}
+			}
+			
+			@media (max-width:767px){
+				
+			}
+			
+			#navbarResponsive{
+				padding-right:8%;
 			}
 		</style>
 	</head>
@@ -175,38 +198,35 @@
       
 		<!-- Navigation -->
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-			<div class="container">
-				<a class="navbar-brand js-scroll-trigger" href="#page-top">Vedant Builders</a>
-				
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-					Menu
-					<i class="fas fa-bars"></i>
-				</button>
-				
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav text-uppercase ml-auto">
-						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#services">Commercial</a>
-						</li>
-						
-						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#portfolio">Residential</a>
-						</li>
-						
-						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#team">Redevelopment</a>
-						</li>
-						
-						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#contact">Joint Development</a>
-						</li>
-						
-						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#about">About</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">Vedant Builders</a>
+			
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav text-uppercase ml-auto">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#services">Commercial</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#portfolio">Residential</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#team">Redevelopment</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#contact">Joint Development</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#about">About</a>
+					</li>
+				</ul>
+			</div>			
 		</nav>
 		
 		<!-- Header -->
@@ -222,4 +242,13 @@
 			</div>
 		</header>
 	</body>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+	<!-- Plugin JavaScript -->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+	<!-- Custom scripts for this template -->
+	<script src="js/agency.min.js"></script>
 </html>
