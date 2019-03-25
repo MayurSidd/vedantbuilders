@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6{
     font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
 }
 section{
-    padding:100px 0
+    padding:50px 0
 }
 section h2.section-heading{
     font-size:40px;
@@ -37,7 +37,7 @@ section h3.section-subheading{
 }
 @media (min-width:768px){
     section{
-        padding:150px 0
+        padding:50px 0
     }
 }
 .btn{
@@ -85,7 +85,6 @@ img::-moz-selection{
     font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
 }
 #mainNav .navbar-brand{
-    color:#fed136;
     font-family:'Kaushan Script',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
 }
 #mainNav .navbar-brand.active,#mainNav .navbar-brand:active,#mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover{
@@ -94,10 +93,12 @@ img::-moz-selection{
 #mainNav .navbar-nav .nav-item .nav-link{
     font-size:90%;
     font-weight:400;
-    padding:.75em 0;
+    /* padding:.75em 0; */
     letter-spacing:1px;
+	border-bottom:2px solid transparent;
     color:#fff;
-    font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+    font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+	transition:all 0.7s;
 }
 
 @media (min-width:992px){
@@ -568,3 +569,171 @@ ul.social-buttons li a{
 ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{
     background-color:#fed136
 }
+.divContact {
+				position: absolute;
+				right: 80px;
+				top: 15px;
+				z-index: 999;
+				height: 55px;
+				transition: right .4s ease 0;
+				z-index: 9999;
+				cursor: pointer
+			}
+			.divContact .info-btn.call-btn {
+				border-radius: 50%;
+				cursor: pointer;
+				height: 45px;
+				padding: 11px 13px;
+				position: absolute;
+				right: 0;
+				width: 45px
+			}
+			.info-btn.call-btn, .btn.gallery-btn, .btn.content-btn {
+				-webkit-animation: dot-pulse-idle 4s cubic-bezier(.19, 1, .22, 1) infinite both;
+				animation: dot-pulse-idle 4s cubic-bezier(.19, 1, .22, 1) infinite both
+			}
+			@-webkit-keyframes dot-pulse-idle {
+			0% {
+			box-shadow:0 0 0 0 #fff
+			}
+			50% {
+			box-shadow:0 0 0 40px rgba(255,255,255,0)
+			}
+			}
+			@keyframes dot-pulse-idle {
+			0% {
+			box-shadow:0 0 0 0 #fff
+			}
+			50% {
+			box-shadow:0 0 0 40px rgba(255,255,255,0)
+			}
+			}
+			.divContact .close, .divContact .open {
+				color: #fff;
+				margin-top: 45px;
+				position: absolute;
+				right: -45px;
+				width: 222px
+			}
+			.divContact .open {
+				display: none
+			}
+			.divContact.book {
+				top: 16%!important;
+				position: fixed!important;
+				right: 35px!important;
+				transition: all 0.5s ease 0s
+			}
+			.divContact.book .close, .divContact.book .open {
+				right: 0;
+				width: 165px
+			}
+			.book .info-btn.call-btn {
+				transform: rotate(0deg);
+				border: none
+			}
+			.divContact .close .txt-hld, .divContact .open .txt-hld {
+				display: inline-block;
+				font-size: 15px;
+				font-weight: 800;
+				padding: 10px 10px 0 0;
+				text-transform: uppercase
+			}
+			.call-btn i {
+				color: #f2f2f2;
+				font-size: 18px;
+				line-height: 18px
+			}
+			.divContact:hover .open {
+				display: block
+			}
+			
+			@media (min-width:1920px) {
+				.divContact .close, .divContact .open {
+					margin-top: 0;
+					right: 0
+				}
+			}
+			
+			@media (min-width:1281px) and (max-width:1366px) {
+				.divContact {
+					top: 9px;
+					right: 60px
+				}
+			}
+			
+			@media (min-width:1025px) and (max-width:1280px) {
+				.divContact {
+					right: 30px;
+					top: 9px;
+				}
+			}
+			
+			@media (min-width:991px) and (max-width:1024px) {
+				.divContact {
+					right: 30px;
+					top: 9px;
+				}
+			}
+			
+			@media (min-width:800px) and (max-width:991px) {
+				.divContact {
+					right: 12px;
+					top: 60px;
+				}
+			}
+			
+			@media (min-width:701px) and (max-width:800px) {
+				.divContact {
+					right: 12px;
+					top: 60px;
+				}
+			}
+			
+			@media (min-width:769px) and (max-width:991px) {
+				.divContact .close, .divContact .open {
+					margin-top: 3px;
+					right: 0
+				}
+			}
+			
+			@media (max-width:701px){
+				.divContact .info-btn.call-btn{display: none;}
+			}
+			
+			.fa-contact{transform:scaleX(-1);}
+			
+			.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus, .navbar .navbar-nav > li > a:active{
+				color: #fff;
+				border-bottom: 2px solid #fff !important;
+				background-color: transparent;
+			}
+			
+			@media (max-width:1016px) {
+				.navbar .navbar-nav > li > a {
+					font-size: 11px !important;
+					margin: 0 0px !important;
+				}
+			}
+			
+			@media (min-width:1017px) and (max-width:1070px) {
+				.navbar .navbar-nav > li > a {
+					font-size: 12px !important;
+					margin: 0 5px !important;
+				}
+			}
+			
+			@media (min-width:1071px) and (max-width:1151px) {
+				.navbar .navbar-nav > li > a {
+					font-size: 13px !important;
+					margin: 0 5px !important;
+				}
+			}
+			
+			#navbarResponsive{
+				padding-right:8%;
+			}
+			
+			dl, ol, ul{
+				margin-top:12px;
+			}
