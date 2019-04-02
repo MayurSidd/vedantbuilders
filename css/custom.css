@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.learnMoreBlock{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 2px;
+	z-index: 9;
+}
+
+.learnMoreBlockContent{
+	color: #f9f9f9;
+	cursor: pointer;
+}
+
+.clicktoLearnMore{
+	font-size: 22px;
+}
+
+.carousel-caption{
+	bottom:60px;
+}
+
+.header-underline{
+	background-color:#000; 
+	width:100px; 
+	padding:2px; 
+	margin:0 auto;
+}
