@@ -340,3 +340,29 @@ padding-left: 15px;
     float: right;
 
 }
+
+.Commercial_Banner {
+
+    position: relative;
+    width: 100%;
+    background: transparent;
+
+}
+
+.scrollToTop {
+    position: fixed;
+    width: 35px;
+    bottom: 2%;
+    right: 1%;
+    cursor: pointer;
+    z-index: 99999;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    display: none;
+	color:lightgray;
+}
+
+.scrollToTop:hover{
+	color:#64686d;
+}

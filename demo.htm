@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="keywords" content="" />
+	<!-- <meta name="description" content="" /> -->
+    <meta name="author" content="" />
+
+    <title>Buy Property in Ahmedabad | Vedant Builders</title>
+
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link type="text/css" href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link type="text/css" href="css/animate.min.css" rel="stylesheet"/>
+	<link type="text/css" href="css/jquery.fancybox.min.css" rel="stylesheet"/>
+
+    <link type="text/css" href="css/main.css" rel="stylesheet"/>
+    <link type="text/css" href="css/style.css" rel="stylesheet"/>
+    <link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+    <link type="text/css" href="css/swiper.min.css" rel="stylesheet"/>
+    <link type="text/css" href="ImageHover/imagehover.css" rel="stylesheet"/>
+   
+	<script src="js/jquery.min_7.1.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/swiper.min.js"></script>
+    
+    <script type="text/javascript">
+		function GoToTop() {
+			$("html, body").animate({
+				scrollTop: $("html, body").offset().top
+			}, 1000)
+		}
+		
+		$(window).scroll(function () {
+			var a = $(window).scrollTop();
+			if (a > 150) {
+				$("#gototop").fadeIn(1000)
+			} else {
+				$("#gototop").fadeOut(1000)
+			}
+		});
+		
+		$(document).ready(function () {
+			if (screen.width >= 992) {
+				wow = new WOW({
+					offset: 0
+				});
+				wow.init()
+			}
+			
+			var b = ($(window).height() / 1.5) + "px";
+			$(".swiper-container").attr("style", "height:" + b);
+			$("#homeSliderOuter").attr("style", "height:" + b);
+			
+			var a = new Swiper(".swiper-container", {
+				pagination: ".swiper-pagination",
+				autoplay: 3000,
+				speed: 1700,
+				loop: true,
+				effect: "fade",
+				onSlideChangeStart: function (c) {
+					$(".swiper-slide").find(".home_text_container").attr("style", "display: none")
+				},
+				onSlideChangeEnd: function (c) {
+					$(".swiper-slide:eq(" + c.activeIndex + ")").find(".home_text_container").attr("style", "display: block")
+				},
+			});
+			
+			var a = new Swiper(".swiper_container_about_award", {
+				slidesPerView: 6,
+				freeMode: true,
+				slidesOffsetBefore: 250,
+				nextButton: ".swiper-button-next",
+				prevButton: ".swiper-button-prev",
+				onSetTranslate: function (c, e) {
+					var d = c.params.slidesOffsetBefore
+				},
+				breakpoints: {
+					1152: {
+						slidesPerView: 4,
+						spaceBetween: 10,
+						slidesOffsetBefore: 0
+					},
+					1280: {
+						slidesPerView: 4,
+						spaceBetween: 10,
+						slidesOffsetBefore: 0
+					},
+					1440: {
+						slidesPerView: 5,
+						spaceBetween: 10,
+						slidesOffsetBefore: 0
+					},
+					1680: {
+						slidesPerView: 5,
+						spaceBetween: 10,
+						slidesOffsetBefore: 0
+					},
+					1920: {
+						slidesPerView: 6,
+						spaceBetween: 10,
+						slidesOffsetBefore: 0
+					},
+					768: {
+						slidesPerView: 3,
+						spaceBetween: 10,
+						slidesOffsetBefore: 0
+					},
+					600: {
+						slidesPerView: 2,
+						spaceBetween: 10,
+						slidesOffsetBefore: 0
+					},
+					480: {
+						slidesPerView: 1,
+						spaceBetween: 5,
+						slidesOffsetBefore: 0,
+						freeMode: false,
+						autoplay: 3000,
+						loop: true
+					}
+				}
+			});
+			
+			$("body").click(function () {
+				var c = $("#HomeSearchBox_Block").attr("data-is-open");
+				if (c == "true") {
+					$("#HomeSearchBox_Block").removeClass("HomeSearchBox_open");
+					$("#HomeSearchBox_Block").attr("data-is-open", "false");
+					setTimeout(function () {
+						$(".navbar_menuItem_block").attr("style", "opacity:1")
+					}, 500)
+				}
+			});
+			
+			$("#HomeSearchBox_Block").click(function () {
+				event.preventDefault();
+				event.stopPropagation()
+			});
+			
+			$(window).scroll(function () {
+				var c = $(window).scrollTop();
+				if (c > 150) {
+					$("#main-menu").addClass("headerMainBg");
+					$(".home_text_container").fadeOut(1000);
+					if (screen.width <= 500) {
+						$(".mobileMenuHide").fadeIn(1000)
+					}
+				} else {
+					$("#main-menu").removeClass("headerMainBg");
+					$(".home_text_container").fadeIn(1000);
+					if (screen.width <= 500) {
+						$(".mobileMenuHide").fadeOut(1000)
+					}
+				}
+			});
+			
+			if (screen.width >= 767) {
+				$("li.dropdown a").click(function () {
+					$(this).next("ul.dropdown-menu").css("display", "block", "width", "100%", "position", "relative")
+				});
+			}
+			
+			if (screen.width >= 992) {
+				$(document).on("scroll", function (c) {
+					$(".swiper-wrapperHome").css("margin-top", $(window).scrollTop() * (-0.5) + "px");
+					$(".home_text_container").css("margin-top", $(window).scrollTop() * (-0.5) + "px")
+				})
+			}
+			
+			var b = ($(window).height() / 1.5) + "px";
+			$(".About_Banner").attr("style", "height:" + b);
+			$(".imgAbout_Banner").attr("style", "height:" + b);
+			if (screen.width >= 992) {
+				$(document).on("scroll", function (c) {
+					$(".imgAbout_Banner").css("background-position", "100% " + $(window).scrollTop() * (-0.2) + "px")
+				})
+			}
+			
+			$(".numberOnly").keydown(function (c) {
+				if (c.shiftKey || c.ctrlKey || c.altKey) {
+					c.preventDefault()
+				} else {
+					var d = c.keyCode;
+					if (!((d == 8) || (d == 9) || (d == 46) || (d >= 35 && d <= 40) || (d >= 48 && d <= 57) || (d >= 96 && d <= 105))) {
+						c.preventDefault()
+					}
+				}
+			});
+			
+			$(".charOnly").keydown(function (c) {
+				if (c.shiftKey || c.ctrlKey || c.altKey) {
+					c.preventDefault()
+				} else {
+					var d = c.keyCode;
+					if (!((d == 8) || (d == 9) || (d == 32) || (d == 46) || (d >= 35 && d <= 40) || (d >= 65 && d <= 90))) {
+						c.preventDefault()
+					}
+				}
+			});
+			
+			$(document).ready(function () {
+				$(".fancybox-media").fancybox({
+					openEffect: "none",
+					closeEffect: "none",
+					helpers: {
+						media: {}
+					}
+				})
+			})
+		});
+
+		function validateEmail(a) {
+			var b = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+			if (!b.test(a)) {
+				return false
+			} else {
+				return true
+			}
+		}
+
+		function newsletter__(c) {
+			var b = $("#txtSubscribe").val();
+			if (b) {
+				if (validateEmail(b) == true) {
+					var a = "https://www.shivalikgroup.com/User/subscription";
+					$.ajax({
+						url: a,
+						type: "POST",
+						data: {
+							email: b
+						},
+						success: function (d) {
+							var e = $.parseJSON(d);
+							alert(e.message);
+							$("#txtSubscribe").val("")
+						}
+					})
+				} else {
+					alert("Enter valid email!");
+					$("#txtSubscribe").focus()
+				}
+			} else {
+				alert("Enter email address!");
+				$("#txtSubscribe").focus()
+			}
+			return false
+		}
+
+		function ShowSearchBox() {
+			event.preventDefault();
+			event.stopPropagation();
+			var a = $("#HomeSearchBox_Block").attr("data-is-open");
+			if (a == "false") {
+				setTimeout(function () {
+					$("#HomeSearchBox_Block .search_query").focus()
+				}, 800);
+				$("#HomeSearchBox_Block").addClass("HomeSearchBox_open");
+				$("#HomeSearchBox_Block").attr("data-is-open", "true");
+				$(".navbar_menuItem_block").attr("style", "opacity:0")
+			} else {
+				$("#HomeSearchBox_Block").removeClass("HomeSearchBox_open");
+				$("#HomeSearchBox_Block").attr("data-is-open", "false");
+				setTimeout(function () {
+					$(".navbar_menuItem_block").attr("style", "opacity:1")
+				}, 500)
+			}
+		}
+
+		function GotoRecentLaunches() {
+			if (screen.width <= 992) {
+				$("html, body").animate({
+					scrollTop: $("#ResidentialProject").offset().top - 50
+				}, 1000)
+			} else {
+				$("html, body").animate({
+					scrollTop: $("#ResidentialProject").offset().top
+				}, 1000)
+			}
+		}
+
+		function onlyAlphabets(d, b) {
+			try {
+				if (window.event) {
+					var a = window.event.keyCode
+				} else {
+					if (d) {
+						var a = d.which
+					} else {
+						return true
+					}
+				}
+				if ((a > 64 && a < 91) || (a > 96 && a < 123)) {
+					return true
+				} else {
+					return false
+				}
+			} catch (c) {}
+		}
+		
+		$(window).load(function () {
+			$(".swiper-slide_HomeBanner").each(function (c, d) {
+				var a = $(d).attr("data-original");
+				if (a != undefined && a.length > 0) {
+					var b = new Image();
+					b.src = a;
+					$(b).load(function () {
+						$(d).animate({}, 30000, function () {
+							$(d).css({
+								"background-image": 'url("' + a + '")',
+							})
+						})
+					})
+				}
+			})
+		});
+    
+		function ShowSatishShahMore(a) {
+			$("#SatishShahMore").fadeIn(1000);
+			$(a).attr("style", "display:none")
+		}
+
+		function ReadMoreVision(a) {
+			$("#VisionReadMore").fadeIn(1000);
+			$(a).attr("style", "display:none")
+		}
+
+		function ReadMoreChitrakShah(a) {
+			$("#ChitrakShahReadMore").fadeIn(1000);
+			$(a).attr("style", "display:none")
+		}
+
+		function TaralShahReadMore(a) {
+			$("#TaralShahReadMore").fadeIn(1000);
+			$(a).attr("style", "display:none")
+		}
+		
+		$(window).load(function () {
+			$(".imgAbout_Banner").each(function (c, d) {
+				var a = $(d).attr("data-original");
+				if (a != undefined && a.length > 0) {
+					var b = new Image();
+					b.src = a;
+					$(b).load(function () {
+						$(d).animate({}, 300, function () {
+							$(d).css({
+								"background-image": 'url("' + a + '")',
+							})
+						})
+					})
+				}
+			})
+		});
+
+		function searchProduct(b) {
+			var c = $(b);
+			$(b).find(".customSearchbar").css("border-color", "#ededed");
+			
+			var a = $(b).find(".customSearchbar").val();
+			if ($(b).find(".customSearchbar").val().length >= 2) {
+				window.location.href = "https://www.shivalikgroup.com/search/" + a;
+				return false
+			} else {
+				$(b).find(".expSearchFrom").css("border-color", "red");
+				$(b).find(".customSearchbar").focus();
+				return false
+			}
+		};
+    </script>
+    
+	<style>
+		.style_none {
+			border: 0;
+			background: 0;
+			text-transform: unset;
+			padding: 0;
+			width: 100%
+		}
+
+		.swiper_slide_ResiProj:hover .projects_border_line {
+			opacity: 1;
+			-webkit-transition: all .7s;
+			-moz-transition: all .7s;
+			transition: all .7s
+		}
+
+		.swiper_slide_ResiProj .blackColor,
+		.swiper_slide_ResiProj .blackColor:hover,
+		.residentials_main_div .blackColor:hover,
+		.residentials_main_div .blackColor {
+			color: #000
+		}
+
+		.HoverTextHeaderHover {
+			display: inline-block;
+			position: relative
+		}
+
+		.HoverTextHeaderHover:after {
+			height: 2px;
+			background: #fff;
+			content: "";
+			position: absolute;
+			bottom: -5px;
+			width: 0;
+			left: 50%;
+			-webkit-transition: all ease-in-out .5s;
+			-moz-transition: all ease-in-out .5s;
+			-ms-transition: all ease-in-out .5s;
+			-o-transition: all ease-in-out .5s;
+			transition: all ease-in-out .5s
+		}
+
+		.HoverTextHeaderHover:hover:after {
+			width: 70%;
+			left: 15%
+		}
+
+		.btn_read_more_submit {
+			border: 1px solid #323232;
+			text-transform: uppercase;
+			color: #222!important;
+			border-radius: 2px;
+			margin: 20px 0 0 0;
+			display: inline-block;
+			z-index: 1;
+			background: #fff;
+			cursor: pointer;
+			position: relative
+		}
+
+		.btn_read_more_submit:after {
+			width: 100%;
+			height: 0;
+			top: 0;
+			left: 0;
+			background: #323232;
+			content: '';
+			position: absolute;
+			z-index: -1;
+			-webkit-transition: all .3s;
+			-moz-transition: all .3s;
+			transition: all .3s
+		}
+
+		.btn_read_more_submit:hover:after {
+			height: 100%;
+			z-index: 9
+		}
+
+		.btn_read_more_submit .btnsubmit {
+			padding: 5px 15px;
+			background: transparent;
+			border: 0;
+			position: relative;
+			z-index: 9;
+			color: #000
+		}
+
+		.btn_read_more_submit:hover .btnsubmit {
+			color: #fff;
+			z-index: 99
+		}
+
+		.HoverTextContainer a img:hover {
+			transform: scale(1.3)
+		}
+
+		.dropdown-menu>li>a {
+			padding: 10px 20px 10px 10px;
+			border-bottom: solid 1px #ccc
+		}
+
+		.dropdown-menu {
+			left: 30px
+		}
+
+		.dropdown-menu>li>a:hover {
+			background: #323232;
+			color: #fff
+		}
+
+		.nav>li {
+			padding: 19px 5px 5px 5px
+		}
+
+		.mobile_view {
+			display: none
+		}
+
+		.mobileMenuHide {
+			display: block
+		}
+
+		@media(max-width:480px) {
+			.nav>li:last-child {
+				display: block!important
+			}
+		}
+
+		@media(min-width:415px) and (max-width:767px) {
+			.navbar-toggle {
+				margin-top: 35px
+			}
+		}
+
+		@media(max-width:767px) {
+			.mobile_view {
+				display: block
+			}
+			.mobileMenuHide {
+				display: none
+			}
+			.navbar-collapse {
+				padding-right: 0;
+				padding-left: 0
+			}
+			.navbar-toggle {
+				display: block
+			}
+			.navbar-nav {
+				margin: 0;
+				text-align: left
+			}
+			.nav>li {
+				padding: 19px 10px 5px 0;
+				display: block
+			}
+			.navbar_menuItem_block_right {
+				display: none
+			}
+			.navbar-default .navbar-nav>.active>a,
+			.navbar-default .navbar-nav>.active>a:hover,
+			.navbar-default .navbar-nav>.active>a:focus {
+				border-bottom: 0
+			}
+			.navbar_menuItem_block {
+				width: 100%
+			}
+			.navbar-fixed-top {
+				background: rgba(50, 50, 50, .7)
+			}
+			.pogoda-hld .info-btn.call-btn {
+				display: none
+			}
+			.navbar_header_logo {
+				width: 100%;
+				text-align: left;
+				padding-bottom: 10px
+			}
+			.navbar_header_logo img,
+			.headerMainBg .navbar_header_logo img {
+				width: 30%
+			}
+			.navbar-nav .open .dropdown-menu>li>a,
+			.navbar-nav .open .dropdown-menu .dropdown-header {
+				padding: 10px;
+				border-bottom: solid 1px #484848
+			}
+			.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+				color: #c1c1c1
+			}
+			.navbar-fixed-top {
+				background: rgba(50, 50, 50, .98)
+			}
+			.mobile_view .dropdown-menu {
+				margin-left: 15px
+			}
+			.navbar-default .navbar-nav>.open>a,
+			.navbar-default .navbar-nav>.open>a:hover,
+			.navbar-default .navbar-nav>.open>a:focus {
+				background-color: transparent;
+				color: #fff
+			}
+			.navbar-toggle,
+			.navbar-default .navbar-toggle:hover,
+			.navbar-default .navbar-toggle:focus {
+				background-color: transparent;
+				border: 0
+			}
+		}
+
+		@media(min-width:979px) {
+			ul.nav li.dropdown>ul.dropdown-menu {
+				opacity: 0;
+				padding: 0;
+				margin: 0
+			}
+			ul.nav li.dropdown:hover>ul.dropdown-menu {
+				display: block;
+				opacity: 1;
+				z-index: 999
+			}
+		}
+	</style>
+	</head>
+	
+	<body class="pr0">
+
+   
+
+  <div class="pogoda-hld">
+
+        <div class="info-btn call-btn"> <a href="tel:+91 79 4020 0000"><i class="fa fa-phone"></i></a> </div>
+
+        <div class="open">
+
+          <div class="txt-hld"> Call: +91 79 4020 0000 </span> </div>
+
+        </div>
+
+      </div>
+
+    
+    
+
+   
+
+
+
+    <header id="header">
+
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+
+            <div class="container">
+
+                <div class="navbar_header_logo">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+
+                    <a href="https://www.shivalikgroup.com/">
+
+                        <img src="https://www.shivalikgroup.com/templates/images/logo.svg" alt="logo" class="navbar_brand_logo img" />
+
+                    </a>
+
+                </div>
+                <div class="mobile_view">
+            <div class="navbar_menuItem_block navbar-collapse collapse" id="navbar-collapse">
+
+                        <ul class="nav navbar-nav text_uppercase league_spartanregular">
+
+                            
+                            
+
+                           
+
+                            <li class=" dropdown uppercase active"><a class="dropdown-toggle"    href="https://www.shivalikgroup.com/commercial">Commercial</a>
+                                                            </li>
+
+                            
+                            
+
+                           
+
+                            <li class=" dropdown uppercase "><a class="dropdown-toggle"    href="https://www.shivalikgroup.com/residential">Residential</a>
+                                                            </li>
+
+                            
+                            <li class="uppercase "><a href="https://www.shivalikgroup.com/redevelopment">Redevelopment</a></li>
+                            <li class="uppercase "><a href="https://www.shivalikgroup.com/jd">Joint development</a></li>
+                            <li class="uppercase "><a href="https://goo.gl/cNxpiM" target="_blank">Broker Registration</a></li>
+
+
+                        </ul>
+
+                    </div>
+                    <div class="clearfix"></div>
+                    </div>
+
+                <div class="mobileMenuHide">
+
+
+                    <div class="navbar_menuItem_block navbar-collapse collapse" id="navbar">
+
+                        <ul class="nav navbar-nav text_uppercase league_spartanregular">
+
+                            
+                            
+
+							
+							<li class=" dropdown uppercase active"><a class="dropdown-toggle"  href="https://www.shivalikgroup.com/commercial">Commercial </a>
+                                                            </li>
+
+                            
+                            
+
+							
+							<li class=" dropdown uppercase "><a class="dropdown-toggle"  href="https://www.shivalikgroup.com/residential">Residential </a>
+                                                            </li>
+
+                            
+							<li class="uppercase "><a href="https://www.shivalikgroup.com/redevelopment">Redevelopment</a></li>
+                            <li class="uppercase "><a href="https://www.shivalikgroup.com/jd">Joint development</a></li>
+                            <li class="uppercase "><a href="https://goo.gl/cNxpiM" target="_blank">Broker Registration</a></li>
+
+
+                        </ul>
+
+                    </div>
+
+					<div class="navbar_menuItem_block_right">
+
+                        <img src="https://www.shivalikgroup.com/templates/images/user.png" alt="logo" class="Menu_icon img" title="Login" style="display: none;" />
+
+                        <!--<img src="https://www.shivalikgroup.com/templates/images/search_icon.png" alt="logo" class="Menu_icon img" title="Search" onclick="ShowSearchBox();" />
+
+                        <div id="HomeSearchBox_Block" class="HomeSearchBox_Block" data-is-open="false">
+
+							<form action="https://www.shivalikgroup.com//#self" onsubmit="return searchProduct(this);" method="post" accept-charset="utf-8" class="">		
+
+								<input type="text" value="" name="search_query" class="HomeSearchBox search_query customSearchbar" id="field" placeholder="Search"  autocomplete="off" />
+
+							</form>	
+
+                        </div>-->
+
+                        <!-- <a href="mailto:info@shivalikgroup.com" class="menu_ic"> <i class="fa fa-envelope Menu_icon mail_ic" ></i></a> -->
+
+                        </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+        </nav>
+
+        <div class="clearfix"></div>
+
+    </header>
+
+	<div style="width:100%;float:left;">
+	<style type="text/css">
+		.ProjectSlider{
+			position: relative;
+		}
+		.ProjectSlider:before{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: rgba(0,0,0,0.4);
+			content: "";
+		}
+	</style>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+			if (screen.width >= 992) {	
+            wow = new WOW({
+                offset: 0
+            })
+            wow.init();
+			}
+			else{
+				
+			}
+            /*
+            var screen_height = ($(window).height() / 1.5) + 'px';
+            $(".Commercial_Banner").attr("style", 'height:' + screen_height);
+            $(".imgCommercial_Banner").attr("style", 'height:' + screen_height);*/
+            
+
+			if (screen.width >= 992) {	
+            $(document).on('scroll', function (e) {
+                $(".imgCommercial_Banner").css('background-position', "100% " + $(window).scrollTop() * (-0.20) + "px");
+            });
+			}
+			else{
+				
+			}
+			
+			/* $(".project_detail_tab li a").click(function () {
+                $(".project_detail_tab li a").removeClass("active");
+                $(this).addClass("active");
+
+                var tabindex = $(this).attr("tabindex");
+
+                $(".project_detail_tab_view").each(function (e) {
+                    var blockIndex = $(this).attr("tabindex");
+                    if (blockIndex == tabindex) {
+                        $(this).removeClass("detail_block_visibility_off");
+                        $(this).addClass("detail_block_visibility_on");
+                    }
+                    else {
+                        $(this).addClass("detail_block_visibility_off");
+                        $(this).removeClass("detail_block_visibility_on");
+                    }
+                });
+
+                if (tabindex == 2) {
+                    $(".project_img").removeClass("wow fadeInLeft animated");
+                    $(".project_img").removeClass("wow fadeInRight animated");
+                    $(".project_img").addClass("wow fadeInRight animated");
+                }
+
+                if (tabindex == 3) {
+                    $(".project_img").removeClass("wow fadeInRight animated");
+                    $(".project_img").removeClass("wow fadeInLeft animated");
+                    $(".project_img").addClass("wow fadeInLeft animated");
+                }
+
+            }); */
+			
+			
+
+        });
+
+      
+       
+        
+
+        $(window).load(function () {
+            $(".imgCommercial_Banner").each(function (i, item) {
+                var _dataOriginal = $(item).attr('data-original');
+                if (_dataOriginal != undefined && _dataOriginal.length > 0) {
+                    var img = new Image();
+                    img.src = _dataOriginal;
+                    $(img).load(function () {
+                        $(item).animate({
+                            //opacity: 0
+                        }, 30000, function () {
+                            $(item).css({
+                                "background-image": "url(\"" + _dataOriginal + "\")",
+                            });
+                            //setTimeout(function () {
+                            //    $(item).animate({
+                            //        opacity: 1
+                            //    }, 300);
+                            //}, 500);
+                        });
+                    });
+                }
+            });
+        });
+function GotoRecentLaunches() {
+            if (screen.width <= 992) {
+                $('html, body').animate({
+                    scrollTop: $(".Residentails_contentblock").offset().top - 50
+                }, 1000);
+            }
+            else {
+                $('html, body').animate({
+                    scrollTop: $(".Residentails_contentblock").offset().top
+                }, 1000);
+            }
+        }
+    </script>
+
+	    <section id="ResidentialsProject_section">
+        <div class="Commercial_Banner wow fadeIn">
+            <!--
+            <div class="imgCommercial_Banner" data-original="https://www.shivalikgroup.com/templates/images/CommercialProjects/banner.jpg" >
+                <div class="banner_text_container">
+                    <div class="container">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="home_text_container">
+                                <h1 class="site_text_title text_upper text_shadow wow fadeInRight" data-wow-delay="0.3s">Commercial projects </h1>
+                                <div class="site_white_border_line wow fadeInLeft" data-wow-delay="0.3s"></div>
+                            </div>	
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>-->
+			           <section id="homeSliderOuter" class="bgTransHomeBanner">
+		       	<div class="HomeSlider wow fadeIn">
+		            <div class="swiper-container">
+		                <div class="swiper-wrapper swiper-wrapperHome desktop_banner">
+		                	
+		                											<div class="swiper-slide swiper-slide_HomeBanner ProjectSlider " data-original="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/gallery_image/shivalik_avanue1.jpg&w=1920&h=600"> </div>
+																				<div class="swiper-slide swiper-slide_HomeBanner ProjectSlider " data-original="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/gallery_image/square.jpg&w=1920&h=600"> </div>
+																				<div class="swiper-slide swiper-slide_HomeBanner ProjectSlider " data-original="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/gallery_image/satyamev.jpg&w=1920&h=600"> </div>
+																				<div class="swiper-slide swiper-slide_HomeBanner ProjectSlider " data-original="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/gallery_image/shilp.jpg&w=1920&h=600"> </div>
+																				<div class="swiper-slide swiper-slide_HomeBanner ProjectSlider " data-original="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/gallery_image/Shilp2-8.jpg&w=1920&h=600"> </div>
+												
+		                </div>
+						
+						<div class="swiper-wrapper swiper-wrapperHome mobile_banner">
+
+		                											<div class="swiper-slide1 swiper-slide_HomeBanner ProjectSlider" data-original="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/gallery_image/shivalik_avanue1.jpg&w=840&h=800"> </div>
+																				<div class="swiper-slide1 swiper-slide_HomeBanner ProjectSlider" data-original="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/gallery_image/square.jpg&w=840&h=800"> </div>
+																				<div class="swiper-slide1 swiper-slide_HomeBanner ProjectSlider" data-original="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/gallery_image/satyamev.jpg&w=840&h=800"> </div>
+																				<div class="swiper-slide1 swiper-slide_HomeBanner ProjectSlider" data-original="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/gallery_image/shilp.jpg&w=840&h=800"> </div>
+																				<div class="swiper-slide1 swiper-slide_HomeBanner ProjectSlider" data-original="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/gallery_image/Shilp2-8.jpg&w=840&h=800"> </div>
+												
+		                </div>
+						
+		            </div>
+		        </div>
+		        <div class="ClickToDownBlock">
+		            <span class="ClickToDownBlockInner" onclick="GotoRecentLaunches();">Recent Launches
+		            <br />
+		                <i class="fa fa-angle-down clicktodownAero"></i>
+		            </span>
+		        </div>
+
+		        <div class="home_text_container">
+                    <h1 class="site_text_title text_upper text_shadow wow fadeInRight" data-wow-delay="0.3s">
+					Commercial projects </h1>
+					                    <div class="site_white_border_line wow fadeInLeft" data-wow-delay="0.3s"></div>
+                </div>
+		    </section>
+             
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-12 bgWhite">
+            <div class="Residentails_contentblock">
+               	<h1 class="site_text_title text_upper text_black h_tag_margin_zero wow fadeInRight" data-wow-delay="0.3s">immortal beings of a perennial empire </h1>
+				 <div class="site_black_border_line wow fadeInLeft" data-wow-delay="0.3s"></div> 				<div class="clearfix"></div>
+                <div class="clearfix"></div>
+                <div class="container">
+                    <div class="col-md-12 mobilePaddingZero">
+                        <div class="row desktop_model">
+									<div class="col-md-6 col-sm-6 residentials_main_div">
+			<div class="col-md-12 residentials_inner_block">
+					<div class="hoverZoomMain wow fadeInLeft" data-wow-delay="0.3s">
+						<img src="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/medium/shivalik_avanue1.jpg&amp;w=540&amp;h=400" class="img" alt="SHIVALIK AVENUE COMMERCIAL">
+						
+						<div class="Resi_Project_blockHover">
+							<figure class="imghvr-shutter-out-diag-1">
+								<figcaption>
+									<div class="HoverTextContainer">
+																				<span class="resi_hoverInnerText">Bodakdev
+Ahmedabad - 380054</span>
+																														<span class="resi_hoverInnerText">shops											
+											</span>
+																																								<a href="https://www.shivalikgroup.com/project/shivalik-avenue-commercial"><span class="btnExplore view_project_btn">View Project</span></a>
+																			</div>
+								</figcaption>
+							</figure>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				
+				<div class="clearfix"></div>
+				
+				<div class="award_content_block">
+					<div class="award_content_title award_content_titleLarge wow fadeIn" data-wow-delay="0.3s"><a href="						https://www.shivalikgroup.com/project/shivalik-avenue-commercial							" class="blackColor">SHIVALIK AVENUE COMMERCIAL</a></div>
+					<div class="projects_border_line"></div>
+				</div>
+				
+			</div>
+		</div>
+			<div class="col-md-6 col-sm-6 residentials_main_div">
+			<div class="col-md-12 residentials_inner_block">
+					<div class="hoverZoomMain wow fadeInLeft" data-wow-delay="0.3s">
+						<img src="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/medium/square.jpg&amp;w=540&amp;h=400" class="img" alt="SHIVALIK SQUARE">
+						
+						<div class="Resi_Project_blockHover">
+							<figure class="imghvr-shutter-out-diag-1">
+								<figcaption>
+									<div class="HoverTextContainer">
+																				<span class="resi_hoverInnerText">132 Feet Ring Road, New Wadaj</span>
+																														<span class="resi_hoverInnerText">1408 Sq.ft SBA Showrooms											
+											| 590 Sq.ft SBA Offices											
+											</span>
+																																								<a href="https://www.shivalikgroup.com/project/shivalik-square"><span class="btnExplore view_project_btn">View Project</span></a>
+																			</div>
+								</figcaption>
+							</figure>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				
+				<div class="clearfix"></div>
+				
+				<div class="award_content_block">
+					<div class="award_content_title award_content_titleLarge wow fadeIn" data-wow-delay="0.3s"><a href="						https://www.shivalikgroup.com/project/shivalik-square							" class="blackColor">SHIVALIK SQUARE</a></div>
+					<div class="projects_border_line"></div>
+				</div>
+				
+			</div>
+		</div>
+			<div class="col-md-6 col-sm-6 residentials_main_div">
+			<div class="col-md-12 residentials_inner_block">
+					<div class="hoverZoomMain wow fadeInLeft" data-wow-delay="0.3s">
+						<img src="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/medium/satyamev.jpg&amp;w=540&amp;h=400" class="img" alt="SHIVALIK SATYAMEV">
+						
+						<div class="Resi_Project_blockHover">
+							<figure class="imghvr-shutter-out-diag-1">
+								<figcaption>
+									<div class="HoverTextContainer">
+																				<span class="resi_hoverInnerText">Bopal Junction</span>
+																														<span class="resi_hoverInnerText">512 Sq.Ft SBA Offices											
+											| 770 Sq.Ft SBA Showrooms											
+											</span>
+																																								<a href="https://www.shivalikgroup.com/project/shivalik-satyamev"><span class="btnExplore view_project_btn">View Project</span></a>
+																			</div>
+								</figcaption>
+							</figure>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				
+				<div class="clearfix"></div>
+				
+				<div class="award_content_block">
+					<div class="award_content_title award_content_titleLarge wow fadeIn" data-wow-delay="0.3s"><a href="						https://www.shivalikgroup.com/project/shivalik-satyamev							" class="blackColor">SHIVALIK SATYAMEV</a></div>
+					<div class="projects_border_line"></div>
+				</div>
+				
+			</div>
+		</div>
+			<div class="col-md-6 col-sm-6 residentials_main_div">
+			<div class="col-md-12 residentials_inner_block">
+					<div class="hoverZoomMain wow fadeInLeft" data-wow-delay="0.3s">
+						<img src="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/medium/shilp.jpg&amp;w=540&amp;h=400" class="img" alt="SHIVALIK SHILP">
+						
+						<div class="Resi_Project_blockHover">
+							<figure class="imghvr-shutter-out-diag-1">
+								<figcaption>
+									<div class="HoverTextContainer">
+																				<span class="resi_hoverInnerText">Iscon Cross Road</span>
+																														<span class="resi_hoverInnerText">574 Sq.Ft SBA Offices											
+											| 1196 Sq.Ft SBA Showrooms											
+											</span>
+																																								<a href="https://www.shivalikgroup.com/project/shivalik-shilp"><span class="btnExplore view_project_btn">View Project</span></a>
+																			</div>
+								</figcaption>
+							</figure>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				
+				<div class="clearfix"></div>
+				
+				<div class="award_content_block">
+					<div class="award_content_title award_content_titleLarge wow fadeIn" data-wow-delay="0.3s"><a href="						https://www.shivalikgroup.com/project/shivalik-shilp							" class="blackColor">SHIVALIK SHILP</a></div>
+					<div class="projects_border_line"></div>
+				</div>
+				
+			</div>
+		</div>
+			<div class="col-md-6 col-sm-6 residentials_main_div">
+			<div class="col-md-12 residentials_inner_block">
+					<div class="hoverZoomMain wow fadeInLeft" data-wow-delay="0.3s">
+						<img src="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/medium/Shilp2-8.jpg&amp;w=540&amp;h=400" class="img" alt="shivalik shilp 2">
+						
+						<div class="Resi_Project_blockHover">
+							<figure class="imghvr-shutter-out-diag-1">
+								<figcaption>
+									<div class="HoverTextContainer">
+																				<span class="resi_hoverInnerText">Keshavbaug</span>
+																														<span class="resi_hoverInnerText">588 Sq.ft SBA Offices											
+											| 2289 Sq.Ft SBA Showrooms											
+											</span>
+																																								<a href="https://www.shivalikgroup.com/project/shivalik-shilp-2"><span class="btnExplore view_project_btn">View Project</span></a>
+																			</div>
+								</figcaption>
+							</figure>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				
+				<div class="clearfix"></div>
+				
+				<div class="award_content_block">
+					<div class="award_content_title award_content_titleLarge wow fadeIn" data-wow-delay="0.3s"><a href="						https://www.shivalikgroup.com/project/shivalik-shilp-2							" class="blackColor">shivalik shilp 2</a></div>
+					<div class="projects_border_line"></div>
+				</div>
+				
+			</div>
+		</div>
+	                        </div>
+						 <div class="row mobile_model">
+									<div class="col-md-6 col-sm-6 residentials_main_div row">
+			<div class="col-md-12 residentials_inner_block row">
+					<a href="https://www.shivalikgroup.com/project/shivalik-avenue-commercial">
+						<div class="" data-wow-delay="0.3s">
+							<img src="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/medium/shivalik_avanue1.jpg&amp;w=540&amp;h=400" class="img" alt="SHIVALIK AVENUE COMMERCIAL">
+						</div>
+					</a>
+				<div class="clearfix"></div>
+				<div class="award_content_block">
+					<div class="award_content_title award_content_titleLarge wow fadeIn" data-wow-delay="0.3s"><a href="https://www.shivalikgroup.com/project/shivalik-avenue-commercial" class="blackColor">SHIVALIK AVENUE COMMERCIAL</a></div>
+					<div class="projects_border_line"></div>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-sm-6 residentials_main_div row">
+			<div class="col-md-12 residentials_inner_block row">
+					<a href="https://www.shivalikgroup.com/project/shivalik-square">
+						<div class="" data-wow-delay="0.3s">
+							<img src="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/medium/square.jpg&amp;w=540&amp;h=400" class="img" alt="SHIVALIK SQUARE">
+						</div>
+					</a>
+				<div class="clearfix"></div>
+				<div class="award_content_block">
+					<div class="award_content_title award_content_titleLarge wow fadeIn" data-wow-delay="0.3s"><a href="https://www.shivalikgroup.com/project/shivalik-square" class="blackColor">SHIVALIK SQUARE</a></div>
+					<div class="projects_border_line"></div>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-sm-6 residentials_main_div row">
+			<div class="col-md-12 residentials_inner_block row">
+					<a href="https://www.shivalikgroup.com/project/shivalik-satyamev">
+						<div class="" data-wow-delay="0.3s">
+							<img src="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/medium/satyamev.jpg&amp;w=540&amp;h=400" class="img" alt="SHIVALIK SATYAMEV">
+						</div>
+					</a>
+				<div class="clearfix"></div>
+				<div class="award_content_block">
+					<div class="award_content_title award_content_titleLarge wow fadeIn" data-wow-delay="0.3s"><a href="https://www.shivalikgroup.com/project/shivalik-satyamev" class="blackColor">SHIVALIK SATYAMEV</a></div>
+					<div class="projects_border_line"></div>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-sm-6 residentials_main_div row">
+			<div class="col-md-12 residentials_inner_block row">
+					<a href="https://www.shivalikgroup.com/project/shivalik-shilp">
+						<div class="" data-wow-delay="0.3s">
+							<img src="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/medium/shilp.jpg&amp;w=540&amp;h=400" class="img" alt="SHIVALIK SHILP">
+						</div>
+					</a>
+				<div class="clearfix"></div>
+				<div class="award_content_block">
+					<div class="award_content_title award_content_titleLarge wow fadeIn" data-wow-delay="0.3s"><a href="https://www.shivalikgroup.com/project/shivalik-shilp" class="blackColor">SHIVALIK SHILP</a></div>
+					<div class="projects_border_line"></div>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-sm-6 residentials_main_div row">
+			<div class="col-md-12 residentials_inner_block row">
+					<a href="https://www.shivalikgroup.com/project/shivalik-shilp-2">
+						<div class="" data-wow-delay="0.3s">
+							<img src="https://www.shivalikgroup.com/image-tool/index.php?src=https://www.shivalikgroup.com/templates/admin/images/medium/Shilp2-8.jpg&amp;w=540&amp;h=400" class="img" alt="shivalik shilp 2">
+						</div>
+					</a>
+				<div class="clearfix"></div>
+				<div class="award_content_block">
+					<div class="award_content_title award_content_titleLarge wow fadeIn" data-wow-delay="0.3s"><a href="https://www.shivalikgroup.com/project/shivalik-shilp-2" class="blackColor">shivalik shilp 2</a></div>
+					<div class="projects_border_line"></div>
+				</div>
+			</div>
+		</div>
+	                        </div>
+                    </div>
+                </div>
+				
+				
+						
+				
+				
+									<a class="btn_read_more wow zoomIn" data-wow-delay="0.3s" href="https://www.shivalikgroup.com/commercial/complete">View Completed Projects</a>
+					
+            </div>
+        </div>
+    </section>
+
+    <div class="clearfix"></div>
+   
+</body>
+</html>
+</div>
+
+<div class="clearfix"></div> 
+
+    
+
+    <div class="FooterBlockMainBG">
+
+        <div class="container">
+
+            <div class="col-md-12 footerInnerBlock">
+
+                <div class="">
+
+                	<div class="footer-menu mobileWidth100">                         
+
+                        <a href="https://www.shivalikgroup.com/aboutus"><span class="FooterItem wow fadeInLeft" data-wow-delay="0.2s">About Us
+
+                             <i class="fa fa-angle-right footericon"></i>
+
+                        </span></a>                        
+
+                       </div>
+                         <div class="footer-menu mobileWidth100">                      
+
+                        <a href="https://www.shivalikgroup.com/sitemap"><span class="FooterItem wow fadeInLeft" data-wow-delay="0.7s">Sitemap <i class="fa fa-angle-right footericon"></i></span></a>
+
+                     </div>
+                      <div class="footer-menu mobileWidth100">                      
+
+                      <a href="http://social.shivalikgroup.com/" target="_blank">
+
+                            <span class="FooterItem wow fadeInLeft" data-wow-delay="0.6s">We're Social
+
+                             <i class="fa fa-angle-right footericon"></i>
+
+                            </span>
+
+                        </a>
+
+                     </div>
+
+                       
+
+                    <div class="footer-menu mobileWidth100">
+
+                        <a href="https://www.shivalikgroup.com/career"> 
+
+                            <span class="FooterItem wow fadeInLeft" data-wow-delay="0.3s">Career
+
+                             <i class="fa fa-angle-right footericon"></i>
+
+                            </span>
+
+                        </a>                        
+
+                       </div>  
+                       <!-- <div class="footer-menu mobileWidth100">                      
+
+                      <a href="https://www.shivalikgroup.com/maintenance">
+
+                            <span class="FooterItem wow fadeInLeft" data-wow-delay="0.6s">Maintenance query 
+
+                             <i class="fa fa-angle-right footericon"></i>
+
+                            </span>
+
+                        </a>
+
+                     </div> -->              	
+
+                
+
+                   <div class="footer-menu mobileWidth100">
+
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScl1H0exMJrAS0n31NBYXILh789lJCi_xcDn43NL82WNNybrA/viewform">
+
+                            <span class="FooterItem wow fadeInLeft" data-wow-delay="0.6s">Vendor registration
+
+                             <i class="fa fa-angle-right footericon"></i>
+
+                            </span>
+
+                        </a>
+
+                        </div>
+
+                     <div class="footer-menu mobileWidth100">
+
+                      <a href="https://goo.gl/cNxpiM">
+
+                            <span class="FooterItem wow fadeInLeft" data-wow-delay="0.6s">Broker Registration
+
+                             <i class="fa fa-angle-right footericon"></i>
+
+                            </span>
+
+                        </a>
+
+                    </div>     
+
+
+                        <div class="footer-menu mobileWidth100">
+
+                      <a href="https://www.shivalikgroup.com/contactus">
+
+                            <span class="FooterItem wow fadeInLeft" data-wow-delay="0.6s">Contact
+
+                             <i class="fa fa-angle-right footericon"></i>
+
+                            </span>
+
+                        </a>
+
+                        </div>
+
+
+
+                     
+
+<!--                      <div class="footer-menu mobileWidth100">                      
+
+                      <a class="fancybox-media" href="https://www.google.com/maps/place/Shivalik+Group/@23.0276944,72.5087081,17z/data=!4m8!1m2!2m1!1sShivalik+House++b%2Fs+Satellite+police+station,+Ramdevnagar+Cross+Road,+Ahmedabad+380015.!3m4!1s0x395e9b41236d4b1b:0xab774f3c5c086bd3!8m2!3d23.027664!4d72.510706?hl=en-US" >
+
+							<span class="FooterItem wow fadeInLeft" data-wow-delay="0.8s">Location Map
+
+                             <i class="fa fa-angle-right footericon"></i>
+
+                            </span>
+
+						</a>
+
+                     </div> -->
+
+                     <!-- <div class="footer-menu mobileWidth100">                      
+
+                       <a href="https://www.shivalikgroup.com/app">
+
+							<span class="FooterItem wow fadeInLeft" data-wow-delay="0.8s">Real Estate Agent
+
+                             <i class="fa fa-angle-right footericon"></i>
+
+                            </span>
+
+						</a>
+
+                     </div> -->
+
+
+
+                    
+
+                                                           
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+                
+
+                
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12 footerInnerBlockSocialMedia">
+
+                 <div class="col-md-6 col-sm-6 nopadding mobileTextcenter wow fadeInLeft" data-wow-delay="0.9s">                    
+
+					 <span class="FooterCopyRightText">© Shivalik Group 2019 -  ALL RIGHTS RESERVED</span>					
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+                <div class="col-md-6 col-sm-6 nopadding mobileTextcenter  wow fadeInRight" data-wow-delay="1s">
+
+	                <a href="http://social.shivalikgroup.com/" target="_blank">
+
+						<i class="ser-02 FootersocialIcon" title="social media 2.0"><img src="https://www.shivalikgroup.com/templates/images/social_media_2.0.png"></i>
+
+                    </a>
+
+                    <a href="https://in.linkedin.com/company/shivalik-group" target="_blank">
+
+						<i class="fa fa-linkedin FootersocialIcon" title="linkedin" ></i>
+
+                    </a>
+
+					<a href="https://www.instagram.com/shivalikgroup" target="_blank">
+
+                        <i class="fa fa-instagram FootersocialIcon" title="instagram"></i></a>                 
+
+                    
+
+                    <a href="https://twitter.com/shivalik_group" target="_blank">
+
+                        <i class="fa fa-twitter FootersocialIcon" title="twitter"></i>
+
+                    </a>
+
+                    <a href="https://www.facebook.com/ShivalikGroup" target="_blank">
+
+                        <i class="fa fa-facebook FootersocialIcon" title="facebook"></i>
+
+                    </a>
+
+					
+
+                     <a href="https://itunes.apple.com/in/app/shivalik/id1123567601?mt=8&ign-mpt=uo%3D4" target="_blank">
+
+                        <i class="fa fa-apple FootersocialIcon" title="Available on App Store"></i>
+
+                    </a>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.coronation.shivalik&hl=en" target="_blank">
+
+                    <i class="ser-02 FootersocialIcon" title="Android App on Google Play"><img src="https://www.shivalikgroup.com/templates/images/google_playstore_icon.png"></i>
+
+<!--                        <i class="fa fa-play FootersocialIcon" title="Android App on Google Play"></i>-->
+
+                    </a>
+
+                    
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+
+    
+
+	<div class="clearfix"></div>
+
+	<div id="gototop" class="gototopicon" onclick="GoToTop();">
+
+		<img src="https://www.shivalikgroup.com/templates/images/top.png" class="img wow fadeIn" onmouseover="this.src='https://www.shivalikgroup.com/templates/images/top_hover.png'" onmouseout="this.src='https://www.shivalikgroup.com/templates/images/top.png'" title="Go top" />
+
+	</div>
+
+	

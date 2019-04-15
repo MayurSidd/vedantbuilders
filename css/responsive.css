@@ -1,0 +1,1178 @@
+@charset "utf-8";
+@media only screen and (min-width :1600px) and (max-width :1679px) {
+	.navbar-default .navbar-nav>li>a {
+		font-size: 16px
+	}
+	.Homebanner_text_header {
+		font-size: 35px
+	}
+	.Homebanner_text {
+		font-size: 22px
+	}
+	.HomeInnerBlockMainTitle h2 {
+		font-size: 25px;
+		letter-spacing: 1px
+	}
+	.swiper_container_HomePageHeigh {
+		height: 420px
+	}
+}
+
+@media only screen and (min-width :1440px) and (max-width :1599px) {
+	.navbar-default .navbar-nav>li>a {
+		font-size: 16px
+	}
+	.Homebanner_text_header {
+		font-size: 30px
+	}
+	.Homebanner_text {
+		font-size: 20px
+	}
+	.HomeInnerBlockMainTitle h2 {
+		font-size: 23px;
+		letter-spacing: 1px
+	}
+	.swiper_container_HomePageHeigh {
+		height: 400px
+	}
+	.HoverTextHeader {
+		letter-spacing: 1px;
+		font-size: 20px
+	}
+	.HoverInnerText {
+		font-size: 14px
+	}
+	.btnExplore {
+		padding: 8px 40px;
+		font-size: 13px
+	}
+}
+
+@media only screen and (min-width :1400px) and (max-width :1439px) {
+	.navbar-default .navbar-nav>li>a {
+		font-size: 16px
+	}
+	.Homebanner_text_header {
+		font-size: 30px
+	}
+	.Homebanner_text {
+		font-size: 20px
+	}
+	.HomeInnerBlockMainTitle h2 {
+		font-size: 23px;
+		letter-spacing: 1px
+	}
+	.swiper_container_HomePageHeigh {
+		height: 400px
+	}
+	.HoverTextHeader {
+		letter-spacing: 1px;
+		font-size: 20px
+	}
+	.HoverInnerText {
+		font-size: 14px
+	}
+	.btnExplore {
+		padding: 8px 40px;
+		font-size: 13px
+	}
+}
+
+@media only screen and (min-width :1366px) and (max-width :1399px) {
+	.navbar_brand_logo {
+		padding: 4px 0 3px 0
+	}
+	.navbar-fixed-top {
+		padding: 5px 0 0 0
+	}
+	.nav>li {
+		padding: 17px 10px 0 10px
+	}
+	.Menu_icon {
+		padding: 16px 12px 0 12px
+	}
+	.navbar-default .navbar-nav>li>a {
+		font-size: 16px
+	}
+	.Homebanner_text_header {
+		font-size: 30px
+	}
+	.Homebanner_text {
+		font-size: 20px
+	}
+	.HomeInnerBlockMainTitle h2 {
+		font-size: 23px;
+		letter-spacing: 1px
+	}
+	.swiper_container_HomePageHeigh {
+		height: 350px
+	}
+	.HoverTextHeader {
+		letter-spacing: 1px;
+		font-size: 20px
+	}
+	.HoverInnerText {
+		font-size: 14px
+	}
+	.btnExplore {
+		padding: 8px 40px;
+		font-size: 13px
+	}
+	.ChatBubbleicon {
+		width: 8%
+	}
+	.Resi_Project_Hover {
+		padding: 15px
+	}
+	.Resi_Project_blockHover {
+		padding: 15px
+	}
+	.banner_text {
+		font-size: 18px;
+		letter-spacing: 1px;
+		line-height: 26px
+	}
+	.award_content_title {
+		font-size: 14px
+	}
+	.project_detail_tab li a {
+		padding: 8px 26px;
+		font-size: 12px
+	}
+
+}
+
+@media only screen and (min-width :1360px) and (max-width :1365px) {
+	.navbar_brand_logo {
+		padding: 4px 0 3px 0
+	}
+	.navbar-fixed-top {
+		padding: 5px 0 0 0
+	}
+	.nav>li {
+		padding: 17px 10px 0 10px
+	}
+	.Menu_icon {
+		padding: 16px 12px 0 12px
+	}
+	.navbar-default .navbar-nav>li>a {
+		font-size: 16px
+	}
+	.Homebanner_text_header {
+		font-size: 30px
+	}
+	.Homebanner_text {
+		font-size: 20px
+	}
+	.HomeInnerBlockMainTitle h2 {
+		font-size: 23px;
+		letter-spacing: 1px
+	}
+	.swiper_container_HomePageHeigh {
+		height: 350px
+	}
+	.HoverTextHeader {
+		letter-spacing: 1px;
+		font-size: 20px
+	}
+	.HoverInnerText {
+		font-size: 14px
+	}
+	.btnExplore {
+		padding: 8px 40px;
+		font-size: 13px
+	}
+	.ChatBubbleicon {
+		width: 8%
+	}
+	.Resi_Project_Hover {
+		padding: 15px
+	}
+	.Resi_Project_blockHover {
+		padding: 15px
+	}
+	.project_detail_tab li a {
+		padding: 8px 26px;
+		font-size: 12px
+	}
+}
+
+@media only screen and (min-width :1280px) and (max-width :1359px) {
+	.navbar-default .navbar-nav>li>a {
+		font-size: 15px;
+		margin: 0 13px;
+	}
+	.pogoda-hld .info-btn.call-btn{
+		top: 8px;
+	}
+	.navbar_menuItem_block {
+	    width: 83%;
+	}
+	.Homebanner_text_header {
+		font-size: 30px
+	}
+	.Homebanner_text {
+		font-size: 20px
+	}
+	.HomeInnerBlockMainTitle h2 {
+		font-size: 23px;
+		letter-spacing: 1px
+	}
+	.swiper_container_HomePageHeigh {
+		height: 350px
+	}
+	.HoverTextHeader {
+		letter-spacing: 1px;
+		font-size: 20px
+	}
+	.HoverInnerText {
+		font-size: 14px
+	}
+	.btnExplore {
+		padding: 8px 40px;
+		font-size: 13px
+	}
+	.ChatBubbleicon {
+		width: 8%
+	}
+	.Resi_Project_Hover {
+		padding: 15px
+	}
+	.Resi_Project_blockHover {
+		padding: 15px
+	}
+	.FootersocialIcon {
+		margin: 5px 50px 0 0
+	}
+	.banner_text {
+		font-size: 18px;
+		letter-spacing: 1px;
+		line-height: 24px
+	}
+	.project_detail_tab li a {
+		padding: 8px 26px;
+		font-size: 12px
+	}
+}
+
+@media only screen and (min-width :1152px) and (max-width :1279px) {
+	.list-inline {
+		right: 3%
+	}
+	.navbar_menuItem_block {
+	    width: 81%;
+	}
+
+	.nav>li {
+		padding: 18px 10px 0 10px
+	}
+	.youtube_button {
+		transform: translate(-30%, -50%)
+	}
+	.youtube_button img {
+		width: 40%
+	}
+	.Menu_icon {
+		padding: 22px 10px 0 10px
+	}
+	.HomeSearchBox_Block {
+		bottom: -5px
+	}
+	.HomeSearchBox_open {
+		width: 200px
+	}
+	.navbar-default .navbar-nav>li>a {
+		font-size: 15px;
+		margin: 0 5px;
+	}
+	.Homebanner_text_header {
+		font-size: 28px
+	}
+	.Homebanner_text {
+		font-size: 18px;
+		letter-spacing: 1px
+	}
+	.HomeInnerBlockMainTitle h2 {
+		font-size: 22px;
+		letter-spacing: 1px
+	}
+	.swiper_container_HomePageHeigh {
+		height: 350px
+	}
+	.HoverTextHeader {
+		letter-spacing: 1px;
+		font-size: 20px
+	}
+	.HoverInnerText {
+		font-size: 14px
+	}
+	.btnExplore {
+		padding: 6px 25px;
+		font-size: 12px
+	}
+	.ChatBubbleicon {
+		width: 8%
+	}
+	.Resi_Project_Hover {
+		padding: 15px
+	}
+	.Resi_Project_blockHover {
+		padding: 15px
+	}
+	.FootersocialIcon {
+		margin: 5px 30px 0 0
+	}
+	.btnSubscribe {
+		padding: 5px 12px;
+		font-size: 12px
+	}
+	.banner_text {
+		font-size: 18px;
+		letter-spacing: 1px;
+		line-height: 24px
+	}
+	.vision_content {
+		line-height: 20px
+	}
+	.award_content_title {
+		font-size: 13px
+	}
+	.project_detail_tab li a {
+		padding: 8px 20px;
+		font-size: 12px
+	}
+}
+
+@media only screen and (min-width :1024px) and (max-width :1151px) {
+	.list-inline {
+		right: 3%
+	}
+	.navbar_menuItem_block {
+	    width: 81%;
+	}
+	.nav>li {
+		padding: 18px 10px 0 10px
+	}
+	.Menu_icon {
+		padding: 19px 10px 0 10px
+	}
+	.Menu_icon {
+		padding: 19px 10px 0 10px
+	}
+	.HomeSearchBox_open {
+		width: 200px
+	}
+	.navbar-default .navbar-nav>li>a {
+		font-size: 14px;
+		margin: 0 5px;
+	}
+	.Homebanner_text_header {
+		font-size: 28px
+	}
+	.Homebanner_text {
+		font-size: 18px;
+		letter-spacing: 1px
+	}
+	.HomeInnerBlockMainTitle h2 {
+		font-size: 22px;
+		letter-spacing: 1px
+	}
+	.swiper_container_HomePageHeigh {
+		height: 350px
+	}
+	.HoverTextHeader {
+		letter-spacing: 1px;
+		font-size: 18px
+	}
+	.HoverInnerText {
+		font-size: 12px
+	}
+	.btnExplore {
+		padding: 6px 25px;
+		font-size: 12px
+	}
+	.ChatBubbleicon {
+		width: 8%
+	}
+	.Resi_Project_Hover {
+		padding: 15px
+	}
+	.Resi_Project_blockHover {
+		padding: 15px
+	}
+	.FootersocialIcon {
+		margin: 5px 30px 0 0
+	}
+	.btnSubscribe {
+		padding: 5px 12px;
+		font-size: 12px
+	}
+	.banner_text {
+		font-size: 18px;
+		letter-spacing: 1px;
+		line-height: 24px
+	}
+	.vision_content {
+		line-height: 20px;
+		margin: 6px 0 0 0
+	}
+	.award_content_title {
+		font-size: 13px
+	}
+	.project_detail_tab li a {
+		padding: 8px 20px;
+		font-size: 12px
+	}
+}
+
+@media only screen and (max-width:1023px) {
+	.locations_detail {
+		width: 90%;
+		margin: 0 auto
+	}
+	.list-inline {
+		right: 3%
+	}
+	.vision_content {
+		line-height: 20px;
+		margin: 6px 0 0 0;
+		font-size: 12px
+	}
+	.nav>li {
+		padding: 25px 10px 0 10px
+	}
+	.Menu_icon {
+		padding: 25px 10px 0 10px
+	}
+	.HomeSearchBox_Block {
+		bottom: 0
+	}
+	.HomeSearchBox_open {
+		width: 200px
+	}
+	.navbar-default .navbar-nav>li>a {
+		font-size: 14px;
+		margin: 0 5px;
+	}
+	.Homebanner_text_header {
+		font-size: 28px
+	}
+	.Homebanner_text {
+		font-size: 18px;
+		letter-spacing: 1px
+	}
+	.HomeInnerBlockMainTitle h2 {
+		font-size: 22px;
+		letter-spacing: 1px
+	}
+	.swiper_container_HomePageHeigh {
+		height: 350px
+	}
+	.HoverTextHeader {
+		letter-spacing: 1px;
+		font-size: 18px
+	}
+	.HoverInnerText {
+		font-size: 12px
+	}
+	.btnExplore {
+		padding: 6px 25px;
+		font-size: 12px
+	}
+	.ChatBubbleicon {
+		width: 8%
+	}
+	.Resi_Project_Hover {
+		padding: 15px
+	}
+	.Resi_Project_blockHover {
+		padding: 15px
+	}
+	.FootersocialIcon {
+		margin: 5px 30px 0 0
+	}
+	.btnSubscribe {
+		padding: 5px 12px;
+		font-size: 12px
+	}
+	.banner_text {
+		font-size: 18px;
+		letter-spacing: 1px;
+		line-height: 24px
+	}
+	.vision_content {
+		line-height: 20px
+	}
+	.award_content_title {
+		font-size: 13px
+	}
+	.project_detail_tab li a {
+		padding: 8px 20px;
+		font-size: 12px
+	}
+}
+
+@media only screen and (max-width:992px) {
+	.list-inline {
+		right: 1%
+	}
+	#main-menu .container{
+		width: 100%;
+	}
+	.navbar-default .navbar-nav>li>a {
+		font-size: 13px;
+		margin: 0 2px
+	}
+	.HomeSearchBox_open {
+		width: 260px
+	}
+	.HomeSearchBox_Block {
+		bottom: 0
+	}
+	.nav>li {
+		padding: 19px 10px 0 10px
+	}
+	.Menu_icon {
+		padding: 19px 6px 0 6px
+	}
+	.navbar_menuItem_block_right {
+		width: 10%
+	}
+	.swiper_container_HomePageHeigh {
+		height: 300px
+	}
+	.footerInnerBlock {
+		padding: 50px 0 20px 60px
+	}
+	.footerBorderRight {
+		right: 14%
+	}
+	.mobilePaddginJoinMail {
+		padding: 30px 15px
+	}
+	.ChatBubbleicon {
+		width: 12%
+	}
+	.navbar_header_logo {
+		width: 10%
+	}
+	.navbar_menuItem_block {
+		width: 83%
+	}
+	.navbar_menuItem_block .nav>li {
+	    padding: 11px 5px 5px 5px;
+	}
+	.pogoda-hld .info-btn.call-btn{
+		top: -7px;
+	}
+	.HomeSlider {
+		position: relative
+	}
+	.imgAbout_Banner {
+		position: relative
+	}
+	.mobile_model {
+		display: block
+	}
+	.desktop_model {
+		display: none
+	}
+	.home_text_container {
+		z-index: 9
+	}
+}
+
+@media (max-width:991px) {
+	.storeIconimg {
+		width: 20%
+	}
+	.ContactBlock {
+		height: 35vh
+	}
+	.Contact_detail_overview_middle {
+		border: none
+	}
+	.list-inline {
+		right: 3%
+	}
+	.animated {
+		visibility: visible!important
+	}
+}
+
+@media (max-width:890px) {
+	.list-inline {
+		right: 1%
+	}
+}
+
+@media (max-width:800px) {
+	.project_detail_tab li a {
+		padding: 6px 15px;
+		font-size: 12px
+	}
+	.mobile_banner {
+		display: block
+	}
+	.desktop_banner {
+		display: none!important
+	}
+	.navbar-default .navbar-nav>li>a {
+	    font-size: 12px !important;
+	    margin: 0 0px !important;
+	}
+	.pogoda-hld {
+	    right: 15px;
+	    top: 18px !important;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	.ContactBlock {
+		height: 30vh
+	}
+	.Contact_detail_overview_middle {
+		border: none
+	}
+	.FootersocialIcon {
+		margin: 5px 35px 0 0
+	}
+	.award_content_title {
+		font-size: 11px;
+		line-height: 18px
+	}
+	.award_year_title {
+		font-size: 11px;
+		line-height: 18px
+	}
+	.award_content_titleLarge {
+		font-size: 16px!important
+	}
+	.project_detail_tab li {
+		margin: 0 5px
+	}
+	.project_detail_tab li a {
+		padding: 6px 12px
+	}
+}
+
+@media (max-width:767px) {
+	.locations_detail {
+		width: 65%;
+		margin: 0 auto
+	}
+	.vision_content {
+		font-size: 14px;
+		margin: 15px 0 0 0
+	}
+	.list-inline {
+		right: 1%
+	}
+	.navbar-toggle {
+		display: none
+	}
+	.navbar_menuItem_block {
+		width: 70%;
+		text-align: center
+	}
+	.navbar-nav {
+		margin: 0
+	}
+	.navbar_brand_logo {
+		padding: 10px 0 10px 0
+	}
+	.nav>li {
+		padding: 25px 7px 0
+	}
+	.Menu_icon {
+		padding: 25px 7px 0
+	}
+	.footerInnerBlock {
+		padding: 40px 0 0 40px
+	}
+	.FooterCopyRightText {
+		float: none
+	}
+	.mobileTextcenter {
+		text-align: center
+	}
+	.FootersocialIcon {
+		margin: 15px 25px 5px 0;
+		float: none
+	}
+	.ChatBubbleicon {
+		width: 15%
+	}
+	.mobilePaddingZero {
+		padding: 0!important
+	}
+	.textCenterMobile {
+		text-align: center!important
+	}
+	.WebChitrakShahImage {
+		display: none
+	}
+	.MobileChitrakShahImage {
+		display: block
+	}
+	.MarginAboutNameMobile {
+		margin: 15px 0 0 0
+	}
+	.banner_text {
+		font-size: 16px;
+		letter-spacing: 1px;
+		line-height: 22px
+	}
+	.award_content_titleLarge {
+		font-size: 22px!important
+	}
+	.detail_overview_middle {
+		border: none;
+		margin: 10px 0
+	}
+	.project_detail_tab li {
+		margin: 0 5px
+	}
+	.project_detail_tab li a {
+		padding: 6px 8px
+	}
+	.project_detail_main_block {
+		padding: 4vh 0 0 0
+	}
+	.project_detail_content_main {
+		margin: 3vh 0 0 0
+	}
+}
+
+@media (max-width:651px) {
+	.makeAnEnquiry .h_tag_margin_zero {
+		padding: 0;
+	}
+	.makeAnEnquiry .MobileHeadingOpen {
+		margin-top: 0px!important;
+	}
+	.nav>li {
+		padding: 19px 7px 0
+	}
+	.Menu_icon {
+		padding: 19px 7px 0
+	}
+	.detail_block_visibility_off {
+		display: block
+	}
+	.MenuBlockOff {
+		display: none
+	}
+	.project_detail_main_block {
+		padding: 0vh 0 0 0
+	}
+	.project_detail_content_main {
+		margin: 0 0 0 0
+	}
+	.paddingTopMobileMap {
+		padding: 7vh 0 0 0
+	}
+	.MobileHeadingOpen {
+		display: block;
+		font-family: 'Conv_Nunito-Bold';
+		text-align: CENTER;
+		margin-top: 20px!important
+	}
+	.MobileHeadingOpenLine {
+		display: block
+	}
+	.Menu_icon {
+		padding: 32px 4px
+	}
+	.nav>li {
+		padding: 33px 10px
+	}
+	.HomeSearchBox_Block {
+		bottom: 19px
+	}
+	.mobileTabMenu {
+		display: block;
+		background: #222;
+		padding: 13px 16px 10px 16px;
+		text-align: right;
+		cursor: pointer;
+		margin: 0 0 10px 0
+	}
+	.ProjectDetailsMenuText {
+		color: #fff;
+		font-size: 16px;
+		float: left;
+		font-family: 'Open Sans', sans-serif;
+		text-transform: uppercase
+	}
+	.ProjectDetailMenuIcon {
+		color: #fff;
+		font-size: 20px
+	}
+	.project_detail_tab li {
+		margin: 0;
+		width: 100%;
+		padding: 0 10px
+	}
+	.project_detail_tab li a {
+		padding: 6px 0 6px 8px;
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #dadada;
+		margin: 0 0 0 0
+	}
+	.project_detail_tab li a:after {
+		background: #dadada
+	}
+	.project_detail_tab li a.active {
+		color: #000!important
+	}
+	.mobileMargingFeature {
+		margin: 30px 0 0 0
+	}
+	.project_contact_toptitle {
+		font-size: 13px;
+		margin: 0 0 15px 0
+	}
+	.btnDownloadBrochure {
+		padding: 5px 8px
+	}
+	.btn_read_more {
+		padding: 5px 25px
+	}
+}
+
+@media (max-width:500px) {
+	.section-title {
+		display: none
+	}
+	.facebook_mobile {
+		display: inline-block
+	}
+	.facebook_desktop {
+		display: none
+	}
+	.locations_detail {
+		width: 100%;
+		margin: 0 auto
+	}
+	.aboutimgMobile {
+		width: 100%
+	}
+	.mobileMenuHide {
+		display: none
+	}
+	.navbar_header_logo {
+		width: 100%;
+		text-align: CENTER
+	}
+	.navbar_menuItem_block {
+		width: 90%;
+		text-align: center
+	}
+	.navbar_menuItem_block_right {
+		width: 10%
+	}
+	.navbar_brand_logo {
+		padding: 10px 0
+	}
+	.nav>li {
+		padding: 15px 10px
+	}
+	.Menu_icon {
+		padding: 15px 2px
+	}
+	.HomeSearchBox_Block {
+		bottom: 4px
+	}
+	.HomeSearchBox_open {
+		width: 400px
+	}
+	.Homebanner_text {
+		font-size: 15px;
+		line-height: 22px
+	}
+	.swiper-slide_HomeBanner {
+		background-position: center center
+	}
+	.footerInnerBlock .col-md-7 {
+		padding-left: 0;
+		padding-right: 0
+	}
+	.mobileWidth100 {
+		width: 100% !important;
+		margin-right: 0;
+		padding: 0
+	}
+	.footericon {
+		right: 4%
+	}
+	.footerBorderRight {
+		display: none
+	}
+	.footerInnerBlock {
+		padding: 25px 0 0 0
+	}
+	.FooterItem:hover .footericon {
+		right: -2%
+	}
+	.MailNewsLetterTextBox {
+		padding: 6px 10px
+	}
+	.btnSubscribe {
+		padding: 5px 9px;
+		font-size: 12px;
+		margin: 20px 0 0 0%
+	}
+	.ChatBubbleicon {
+		width: 20%
+	}
+	.navbar-default .navbar-nav>li>a {
+		text-shadow: 1px 1px 4px rgb(0, 0, 0)
+	}
+	.banner_text {
+		font-size: 16px;
+		letter-spacing: 1px;
+		line-height: 20px
+	}
+	.site_text_title {
+		font-size: 20px;
+		letter-spacing: 1px
+	}
+	.award_content_title {
+		font-size: 14px;
+		line-height: 22px
+	}
+	.award_year_title {
+		font-size: 12px;
+		line-height: 20px
+	}
+	.banner_text {
+		font-size: 14px;
+		letter-spacing: 1px;
+		line-height: 16px
+	}
+	.award_content_titleLarge {
+		font-size: 17px!important
+	}
+	.award_content_block {
+		margin: 10px 0 0 0
+	}
+	.storeIconimg {
+		position: relative;
+		width: 38%;
+		float: left;
+		margin: 5px 3% 0 0
+	}
+	/*.swiper-button-next {
+		display: none
+	}
+	.swiper-button-prev {
+		display: none
+	}*/
+	.list-inline {
+		right: 3%
+	}
+	.ContactBlock {
+		height: 35vh
+	}
+	.Contact_detail_overview_middle {
+		border: none
+	}
+	.swiper_container_Resi_layout, .swiper_container_work_Progress, .swiper_container_Resi_Project{
+		width: 100%;
+	}
+	/*.swiper-button-next, .swiper-button-prev {
+	    width: 30px;
+	    height: 30px;
+	    margin-top: -15px;
+	    -moz-background-size: 25px 25px;
+	    -webkit-background-size: 25px 25px;
+	    background-size: 25px 25px;
+	 }*/
+}
+
+@media (max-width:480px) {
+	.Menu_icon {
+		padding: 15px 0
+	}
+	.HomeSearchBox_open {
+		width: 315px
+	}
+	.navbar_brand_logo {
+		padding: 10px 0 0 0;
+		width: 40%
+	}
+	.headerMainBg .navbar_brand_logo {
+		width: 25%
+	}
+	.home_text_container {
+		padding: 15px
+	}
+	.ChatBubbleicon {
+		width: 25%
+	}
+	.nav>li {
+		padding: 4px 0 0 0
+	}
+	.nav>li:last-child {
+		display: none
+	}
+	.HomeSearchBox_open {
+		width: 308px
+	}
+	.Menu_icon {
+		padding: 3px 0 0 0;
+		width: 65%
+	}
+	.navbar-default .navbar-nav>li>a {
+		margin: 0 22px
+	}
+	.HomeSearchBox {
+		padding: 10px 0 1px 0
+	}
+	.FootersocialIcon {
+		margin: 20px 10px;
+		float: none
+	}
+	.Homebanner_text {
+		font-size: 15px;
+		line-height: 16px
+	}
+	.ProjectDetailsMenuText {
+		font-size: 14px
+	}
+	.FooterCopyRightText {
+		padding: 20px 0;
+		margin: 0 -4px;
+		font-size: 12px
+	}
+}
+
+@media (max-width:375px) {
+	.HomeSearchBox_open {
+		width: 300px
+	}
+	.ProjectDetailsMenuText {
+		font-size: 12px
+	}
+}
+
+@media (max-width:365px) {
+	.FooterItem {
+		font-size: 11px;
+		padding-left: 8px
+	}
+}
+
+@media (max-width:320px) {
+	.nav>li>a {
+		padding: 0 10px
+	}
+	.HomeSearchBox_open {
+		width: 240px
+	}
+	.Homebanner_text {
+		font-size: 15px;
+		line-height: 16px;
+		letter-spacing: 0
+	}
+	.navbar-default .navbar-nav>li>a {
+		margin: 0 14px
+	}
+	.ChatBubbleicon {
+		width: 30%
+	}
+	.btnDownloadBrochure {
+		padding: 5px 12px;
+		font-size: 11px
+	}
+	.btn_read_more {
+		padding: 5px 20px
+	}
+}
+
+@media (max-height:380px) {
+	.residentials_main_div {
+		width: 50%;
+		float: left;
+		padding: 0 25px
+	}
+	.completd_projects .residentials_main_div {
+		padding: 0
+	}
+	.award_content_titleLarge {
+		font-size: 17px!important
+	}
+	.nav>li {
+		padding: 27px 10px
+	}
+	.Menu_icon {
+		padding: 30px 7px;
+		color: #fff
+	}
+	.navbar_brand_logo {
+		padding: 15px 0
+	}
+	.site_text_title {
+		font-size: 20px
+	}
+}
+
+@media (min-width:501px) and (max-width:767px) {
+	.section-title {
+		left: 0;
+		bottom: 75px
+	}
+	.mobileWidth100 {
+		width: 50%;
+		float: left
+	}
+	.pogoda-hld {
+		right: 10px;
+		top: 70px
+	}
+	.pogoda-hld .close,
+	.pogoda-hld .open {
+		margin-top: 0;
+		right: -9px
+	}
+}
+
+@media (min-width:768px) and (max-width:979px) {
+	.section-title {
+		left: -15px
+	}
+}
+
+@media (min-width:768px) and (max-width:1279px) {
+	.footer-menu {
+		float: left;
+		padding: 0 30px;
+		width: 33%
+	}
+}
+
+@media (min-width:1681px) and (max-width:1920px) {
+	.section-title {
+		left: 12.5%
+	}
+}
+
+@media (min-width:1441px) and (max-width:1600px) {
+	.section-title {
+		left: 7%
+	}
+}
+
+@media (min-width:1281px) and (max-width:1366px) {
+	.section-title {
+		left: 10px
+	}
+}
+
+@media (min-width:1025px) and (max-width:1280px) {
+	.section-title {
+		left: -15px
+	}
+}

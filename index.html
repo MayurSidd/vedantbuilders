@@ -39,7 +39,7 @@
 		<!-- Navigation -->
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 			<div class="container">
-				<a class="navbar-brand js-scroll-trigger" href="#page-top">Vedant Builders</a>
+				<a class="navbar-brand js-scroll-trigger" href="index.html">Vedant Builders</a>
 				
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fas fa-bars"></i>
@@ -48,7 +48,7 @@
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav text-uppercase ml-auto">
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#services">Commercial</a>
+							<a class="nav-link js-scroll-trigger" href="commercial.html">Commercial</a>
 						</li>
 						
 						<li class="nav-item">
@@ -72,7 +72,7 @@
 		</nav>
 		
 		<!-- Header -->
-		<header class="masthead">
+		<header id="headerSlider" class="masthead">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				<!-- <ol class="carousel-indicators"> -->
 					<!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> -->
@@ -339,6 +339,10 @@
 		</div>
 		
 		<div class="clearfix"></div>
+		
+		<div id="gototop" class="scrollToTop" onclick="scrollToTop();">
+			<i class="fas fa-angle-double-up fa-3x"></i>
+		</div>
 	</body>
 	
 	<script src="js/jquery-3.3.1.min.js"></script>
@@ -373,9 +377,29 @@
 				autohidemode: false
 			});
 			
+			$(window).scroll(function () {
+				var scrolltop = $(window).scrollTop();
+				if (scrolltop > 150) {
+					$("#gototop").fadeIn(1000);
+				}
+				else {
+					$("#gototop").fadeOut(1000);
+				}
+			});
+			
+			<!-- var screen_height = ($(window).height() / 1.5) + 'px'; -->
+			<!-- $(".swiper-container").attr("style", 'height:' + screen_height); -->
+			<!-- $("#headerSlider").attr("style", 'height:' + screen_height); -->
+			
 			$('.learnMoreBlockContent').on('click',function(){
 				$("html,body").animate({ scrollTop: $("#commercial").offset().top - 20}, 2000);
 			});
 		});
+		
+		function scrollToTop() {
+            $('html, body').animate({
+                scrollTop: $('html, body').offset().top
+            }, 1000);
+        }
 	</script>
 </html>
