@@ -23,7 +23,6 @@
 	<link href="css/agency.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
@@ -503,9 +502,9 @@
 		//  $(".swiper-container").attr("style", 'height:' + screen_height); 
 		//  $("#headerSlider").attr("style", 'height:' + screen_height); 
 
-		$('.learnMoreBlockContent').on('click', function () {
+		$('.learnMoreBlock').on('click', function () {
 			$("html,body").animate({
-				scrollTop: $("#commercial").offset().top - 20
+				scrollTop: $(".overview").offset().top - 30
 			}, 2000);
 		});
 	});
@@ -519,7 +518,6 @@
 
 <script>
 	$(document).ready(function () {
-
 		$(".filter-button").click(function () {
 			var value = $(this).attr('data-filter');
 

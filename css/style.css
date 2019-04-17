@@ -3,6 +3,10 @@
     animation: fade2 4s infinite;
     -webkit-animation: fade2 4s infinite;
 }
+.box img {
+    max-height: 382px;
+    width: 100%;
+}
 .box {
     text-align: center;
     overflow: hidden;
@@ -35,10 +39,10 @@
     height: 90%;
 }
 
-.box img {
+/* .box img {
     width: 100%;
     height: auto;
-}
+} */
 
 .box .box-content {
     width: 100%;
@@ -328,7 +332,29 @@ section#contact {
 h2.section-heading.text-uppercase {
     margin: 0 0 40px 0;
 }
+span.footer-item:hover {
+    color: #898989;
+    padding-left: 20px;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+}
+.col-md-12.footer-content-2 i:hover {
+    color: #ffffff;
+}
 @media only screen and (max-width:990px) {
+    .col-md-12.footer-content-2 .row {
+        padding: 0;
+        margin: 0;
+    }
+    span.line-view{
+        width: 30%;
+    }
+
+    .box img {
+        min-height: auto;
+    }
     .box {
         margin-bottom: 30px;
     }
