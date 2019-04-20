@@ -1,0 +1,274 @@
+.mainSlider{
+		height:100vh;
+		}
+		.slideshow {
+  list-style: none;
+  z-index: 1;
+}
+
+.slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: imageAnimation 24s linear infinite 0s;
+  -moz-animation: imageAnimation 24s linear infinite 0s;
+  animation: imageAnimation 24s linear infinite 0s;
+}
+
+/* .slideshow li .slider-container { */
+	/* -webkit-backface-visibility: hidden; */
+  /* backface-visibility: hidden; */
+	/* -webkit-animation: imageAnimation 24s linear infinite 0s; */
+  /* -moz-animation: imageAnimation 24s linear infinite 0s; */
+  /* animation: imageAnimation 24s linear infinite 0s; */
+/* } */
+
+.slideshow li h3 {
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  bottom: 150px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  font-size: 2em;
+  font-family: 'roboto', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-animation: titleAnimation 24s linear 1 0s;
+  -moz-animation: titleAnimation 24s linear 1 0s;
+  animation: titleAnimation 24s linear 1 0s;
+}
+@media only screen and (min-width: 768px) {
+
+.slideshow li h3 {
+  bottom: 30px;
+  font-size: 2em;
+}
+}
+@media only screen and (min-width: 1024px) {
+
+.slideshow li h3 { font-size: 2em; }
+}
+
+.slideshow li:nth-child(1) span { background-image: url(../img/residential/vedant-greens/2.jpg); }
+
+.slideshow li:nth-child(2) span {
+  background-image: url(../img/residential/vedant-greens/3.jpg);
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+/* .slideshow li:nth-child(2) .slider-container { */
+	  /* -webkit-animation-delay: 6s; */
+  /* -moz-animation-delay: 6s; */
+  /* animation-delay: 6s; */
+/* } */
+
+.slideshow li:nth-child(3) span {
+  background-image: url(../img/residential/vedant-scarlett/side-view-night.jpg);
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+/* .slideshow li:nth-child(3) .slider-container { */
+	  /* -webkit-animation-delay: 12s; */
+  /* -moz-animation-delay: 12s; */
+  /* animation-delay: 12s; */
+/* } */
+
+.slideshow li:nth-child(4) span {
+  background-image: url(../img/residential/vedant-scarlett/front-gate.jpg);
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  animation-delay: 18s;
+}
+
+/* .slideshow li:nth-child(4) .slider-container { */
+	  /* -webkit-animation-delay: 18s; */
+  /* -moz-animation-delay: 18s; */
+  /* animation-delay: 18s; */
+/* } */
+
+.slideshow li:nth-child(5) span {
+  background-image: url(../img/residential/vedant-scarlett/terrace-1.jpg);
+  -webkit-animation-delay: 24s;
+  -moz-animation-delay: 24s;
+  animation-delay: 24s;
+}
+
+/* .slideshow li:nth-child(5) .slider-container { */
+	  /* -webkit-animation-delay: 24s; */
+  /* -moz-animation-delay: 24s; */
+  /* animation-delay: 24s; */
+/* } */
+
+ @-webkit-keyframes 
+imageAnimation {  0% {
+ opacity: 0;
+ -webkit-animation-timing-function: ease-in;
+}
+ 12.5% {
+ opacity: 1;
+ -webkit-animation-timing-function: ease-out;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+@-moz-keyframes 
+imageAnimation {  0% {
+ opacity: 0;
+ -moz-animation-timing-function: ease-in;
+}
+ 12.5% {
+ opacity: 1;
+ -moz-animation-timing-function: ease-out;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+@keyframes 
+imageAnimation {  0% {
+ opacity: 0;
+ -webkit-animation-timing-function: ease-in;
+ -moz-animation-timing-function: ease-in;
+ animation-timing-function: ease-in;
+}
+ 12.5% {
+ opacity: 1;
+ -webkit-animation-timing-function: ease-out;
+ -moz-animation-timing-function: ease-out;
+ animation-timing-function: ease-out;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+@-webkit-keyframes 
+titleAnimation {  0% {
+ opacity: 0;
+}
+ 12.5% {
+ opacity: 1;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+@-moz-keyframes 
+titleAnimation {  0% {
+ opacity: 0;
+}
+ 12.5% {
+ opacity: 1;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+@keyframes 
+titleAnimation {  0% {
+ opacity: 0;
+}
+ 12.5% {
+ opacity: 1;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+.no-cssanimations .slideshow li span { opacity: 1; }
+
+.slider-container.slider-content {
+			bottom: 0;
+			left: 0px;
+			top: unset;
+			text-align: left;
+			z-index:1;
+		}
+		.slider-container {
+			position: inherit;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			text-align: center;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%)
+		}
+
+.slider-section-title {
+	background-color: rgba(254, 178, 14, 0.6);
+	border-left: 5px solid #fff;
+	bottom: 95px;
+	color: #fff;
+	font-family: "Conv_Nunito-Bold";
+	font-size: 18px;
+	font-weight: 800;
+	left: 0px;
+	letter-spacing: .5px;
+	padding: 32px 20px 20px 20px;
+	position: absolute;
+	z-index: 30;
+	min-width: 450px
+}
+.slider-section-title .slider-project-detail {
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 10px 0 5px
+}

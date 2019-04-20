@@ -1,0 +1,27 @@
+.slideshow, .slideshow li span {
+			height:70vh;
+		}
+		
+		.learnMoreBlock{
+			bottom:30% !important;
+		}
+		
+		.slider-container.slider-content {
+			bottom: 30%;
+			left: 38%;
+			top: unset;
+			text-align: left;
+			z-index:1;
+		}
+		
+		.slider-section-title{
+			border-left:none;
+			padding:15px;
+			text-align:center;
+			font-size:30px;
+			letter-spacing:5px;
+		}
+		
+		.mainSlider{
+			height:auto;
+		}

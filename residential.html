@@ -19,15 +19,12 @@
 	<link href="css/animation.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/slider.css" rel="stylesheet">
+	<link href="css/other-page-slider.css" rel="stylesheet">
+	
 	<!-- Custom styles for this template -->
 	<link href="css/agency.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
-	
-	<style>
-		.carousel-item {
-			height:70vh;
-		}
-	</style>
 </head>
 
 <body>
@@ -60,7 +57,7 @@
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="residential.html">Residential</a>
+						<a class="nav-link js-scroll-trigger active" href="residential.html">Residential</a>
 					</li>
 
 					<li class="nav-item">
@@ -72,7 +69,7 @@
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#about">About</a>
+						<a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
 					</li>
 				</ul>
 			</div>
@@ -81,89 +78,106 @@
 
 	<!-- Header -->
 	<header id="headerSlider" class="masthead">
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			<!-- <ol class="carousel-indicators"> -->
-			<!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> -->
-			<!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> -->
-			<!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
-			<!-- </ol> -->
+		<div class="mainSlider">
+			<ul class="slideshow">
+				<li>
+					<span style='background-image:url(img/residential/vedant-greens/1.jpg);'>
+						<div class="slider-container slider-content">
+							<div class="slider-section-title">
+								RESIDENTIAL PROJECTS
+							</div>
+						</div>
+					</span> 
+				</li>
+				
+				<li> 
+					<span style='background-image:url(img/residential/vedant-greens/2.jpg);'>
+					<div class="slider-container slider-content">
+                        <div class="slider-section-title">
+								RESIDENTIAL PROJECTS
+							</div>
+					</div></span> 
+				</li>
+				
+				<li>
+					<span style='background-image:url(img/residential/vedant-greens/3.jpg);'>
+						<div class="slider-container slider-content">
+                        <div class="slider-section-title">
+							RESIDENTIAL PROJECTS
+                        </div>
+					</div></span> 
+				</li>
+				
+				<li>
+					<span style='background-image:url(img/residential/vedant-greens/4.jpg);'>
+						<div class="slider-container slider-content">
+                        <div class="slider-section-title">
+							RESIDENTIAL PROJECTS
+                        </div>
+					</div></span> 
+				</li>
+				
+				<li>
+					<span style='background-image:url(img/residential/vedant-greens/5.jpg);'>
+						<div class="slider-container slider-content">
+                        <div class="slider-section-title">
+							RESIDENTIAL PROJECTS
+                        </div>
+					</div></span> 
+				</li>
+			</ul>
+		</div>
 
-			<div class="carousel-inner" role="listbox">
-				<!-- Slide One - Set the background image for this slide in the line below -->
-				<div class="carousel-item active" style="background-image: url('img/residential/vedant-greens/1.jpg')">
-					<div class="carousel-caption d-none d-md-block">
-						<h2 class="display-4">First Slide</h2>
-						<p class="lead">This is a description for the first slide.</p>
-					</div>
-				</div>
-
-				<!-- Slide Two - Set the background image for this slide in the line below -->
-				<div class="carousel-item" style="background-image: url('img/residential/vedant-greens/2.jpg')">
-					<div class="carousel-caption d-none d-md-block">
-						<h2 class="display-4">Second Slide</h2>
-						<p class="lead">This is a description for the second slide.</p>
-					</div>
-				</div>
-
-				<!-- Slide Three - Set the background image for this slide in the line below -->
-				<div class="carousel-item" style="background-image: url('img/residential/vedant-greens/3.jpg')">
-					<div class="carousel-caption d-none d-md-block">
-						<h2 class="display-4">Third Slide</h2>
-						<p class="lead">This is a description for the third slide.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> -->
-			<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-			<!-- <span class="sr-only">Previous</span> -->
-			<!-- </a> -->
-
-			<!-- <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> -->
-			<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-			<!-- <span class="sr-only">Next</span> -->
-			<!-- </a> -->
+		<div class="learnMoreBlock">
+			<span class="learnMoreBlockContent">
+				Recent Launches
+				<br /><br />
+				<i class="fas fa-chevron-down clicktoLearnMore slide-top"></i>
+			</span>
 		</div>
 	</header>
 
-	<section id="commercial">
+	<section id="residential">
 		<div class="container">
 			<div class="col-md-12">
-				<div class="overview-title">
-					<h1>RESIDENTIAL PROJECTS
+				<div class="overview-title wow fadeInUp" data-wow-delay="0.4s">
+					<h1>UPCOMING PROJECTS
 					</h1>
-					<span class="line-view"></span>
+					<div class="line-view"></div>
 				</div>
 			</div>
+			
 			<div class="row">
 				<div class="col-md-6">
-					<div class="box">
-						<img src="img/residential/vedant-greens/1.jpg" class="img-fluid">
-						<div class="box-content">
-							<h3 class="title">Vedant Greens</h3>
-							<span class="post">2 & 3 BHK Luxurious Bungalows</span>
-							<div class="explore-btn">
-								<a href="vedant-greens.html">View Project</a>
+					<div class="commerical-projects">
+						<div class="box wow fadeInUp" data-wow-delay="0.6s">
+							<img src="img/residential/vedant-greens/1.jpg" class="img-fluid">
+							<div class="box-content">
+								<h3 class="title">Vedant Greens</h3>
+								<span class="post">2 & 3 BHK Luxurious Bungalows</span>
+								<a href="vedant-greens.html"><span class="btnExplore">EXPLORE</span></a>
 							</div>
 						</div>
-					</div>
-					<div class="title-box">
-						<p>VEDANT GREENS</p>
+						<div class="title-box">
+							<p>VEDANT GREENS</p>
+							<div class="project-header-bottom-line"></div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="box">
-						<img src="img/residential/vedant-scarlett/side-view-right.jpg" class="img-fluid">
-						<div class="box-content">
-							<h3 class="title">Vedant Scarlett</h3>
-							<span class="post">2 & 3 BHK Elegance Living</span>
-							<div class="explore-btn">
-								<a href="vedant-scarlett.html">View Project</a>
+					<div class="commerical-projects">
+						<div class="box wow fadeInUp" data-wow-delay="0.8s">
+							<img src="img/residential/vedant-scarlett/side-view-right.jpg" class="img-fluid">
+							<div class="box-content">
+								<h3 class="title">Vedant Scarlett</h3>
+								<span class="post">2 & 3 BHK Elegance Living</span>
+								<a href="vedant-scarlett.html"><span class="btnExplore">EXPLORE</span></a>
 							</div>
 						</div>
-					</div>
-					<div class="title-box">
-						<p>VEDANT SCARLETT</p>
+						<div class="title-box">
+							<p>VEDANT SCARLETT</p>
+							<div class="project-header-bottom-line"></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -174,11 +188,11 @@
 
 	<div class='footerDiv'>
 		<div class="container">
-			<div class="row">
+			<div class="row wow fadeInLeft" data-wow-delay="0.4s">
 				<div class="col-md-12 footer-content">
 					<div class="">
 						<div class="footer-option">
-							<a href="#">
+							<a href="index.html#about">
 								<span class="footer-item">
 									ABOUT US <i class="fa fa-angle-right footer-icon"></i>
 								</span>
@@ -213,14 +227,6 @@
 							<a href="#">
 								<span class="footer-item">
 									VENDOR REGISTRATION <i class="fa fa-angle-right footer-icon"></i>
-								</span>
-							</a>
-						</div>
-
-						<div class="footer-option">
-							<a href="#">
-								<span class="footer-item">
-									BROKER REGISTRATION <i class="fa fa-angle-right footer-icon"></i>
 								</span>
 							</a>
 						</div>
@@ -306,24 +312,26 @@
 <script src="js/agency.min.js"></script>
 
 <script>
-	wow = new WOW({
+var wow = new WOW({
+		boxClass: 'wow',
 		animateClass: 'animated',
-		offset: 150,
-		callback: function (box) {
-			console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-		}
+		offset: 0,
+		mobile: true,
+		live: true,
+		callback: function (box) {},
+		scrollContainer: null
 	});
 	wow.init();
 
 	$(function () {
-		// $('html').niceScroll({
-		// 	touchbehavior: false,
-		// 	cursorcolor: "#ff6a00",
-		// 	cursoropacitymax: 0.5,
-		// 	cursorwidth: 7,
-		// 	background: "#f6f6f6",
-		// 	autohidemode: false
-		// });
+		$('html').niceScroll({
+		 	touchbehavior: false,
+		 	cursorcolor: "#fec503",
+		 	cursoropacitymax: 0.5,
+		 	cursorwidth: 15,
+		 	background: "#fff",
+		 	autohidemode: false
+		 });
 
 		$(window).scroll(function () {
 			var scrolltop = $(window).scrollTop();
@@ -332,6 +340,12 @@
 			} else {
 				$("#gototop").fadeOut(1000);
 			}
+		});
+		
+		$('.learnMoreBlock').on('click', function () {
+			$("html,body").animate({
+				scrollTop: $("#residential").offset().top - 20
+			}, 2000);
 		});
 
 		//  var screen_height = ($(window).height() / 1.5) + 'px'; 
