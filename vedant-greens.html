@@ -31,6 +31,12 @@
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/image-hover.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+		dl, ol, ul{
+			margin-bottom:0;
+		}
+	</style>
 </head>
 
 <body>
@@ -111,7 +117,9 @@
 		</div>
 		
 		<div class="slider-banner" style="display:block; margin-top:0;">
-			<h1 class="wow fadeInUp" data-wow-delay="0.4s">VEDANT GREENS RESIDENTIAL</h1>
+			<h1 class="wow fadeInUp" data-wow-delay="0.4s">
+				<img src="img/logos/logo_vedant-greens_transparent.png" class="img-fluid" style="max-width:400px;" />
+			</h1>
 			<div class="slider-banner-line wow fadeInDown animated animated" data-wow-delay="0.3s"></div>
 			<h4 class="wow fadeInUp animated animated" data-wow-delay="0.3s" style="margin-top:25px;">2 &amp; 3 BHK Luxurious Bungalows</h4>
 		</div>
@@ -124,12 +132,6 @@
 			</span>
 		</div>
 	</header>
-	
-	<section class="details-subtitle">
-		<div class="container">
-			<p>RERA: XX/XX/XXXXXXXXX/XXXXXXXXX XXXX/XXXX/XXX#####/######</p>
-		</div>
-	</section>
 	
 	<div class="header exploreSection text-center" id="myHeader">
 		<div class="subNav" style="background:#000; transition:all ease-in-out 0.5s;">
@@ -654,7 +656,7 @@
 
 		$('.learnMoreBlock').on('click', function () {
 			$("html,body").animate({
-				scrollTop: $(".exploreSection").offset().top - 50
+				scrollTop: $(".exploreSection").offset().top - 90
 			}, 2000);
 		});
 	});
@@ -701,8 +703,7 @@
 		});
 		
 		var screen_height = ($(window).height() / 1.5) + 'px';
-
-            $(".swiper-container").attr("style", 'height:' + screen_height);
+		$(".swiper-container").attr("style", 'height:' + screen_height);
 	});
 	
 	window.onscroll = function() {myFunction()};

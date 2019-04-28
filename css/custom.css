@@ -391,7 +391,7 @@ margin: 0 auto;
 
 .sticky {
   position: fixed;
-  top: 50px;
+  top: 101px;
   width: 100%;
   z-index:5;
 }
