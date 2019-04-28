@@ -566,7 +566,7 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 .divContact {
 				position: absolute;
 				right: 80px;
-				top: 15px;
+				top: 30px;
 				z-index: 999;
 				height: 55px;
 				transition: right .4s ease 0;
@@ -645,7 +645,7 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 			@media (min-width:1920px) {
 				.divContact .close, .divContact .open {
 					margin-top: 0;
-					right: 0
+					right: 25px;
 				}
 			}
 			
