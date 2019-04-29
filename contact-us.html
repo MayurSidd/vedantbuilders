@@ -79,186 +79,68 @@
 		</div>
 	</nav>
 
-
-	<!-- Header -->
-	<header id="headerSlider" class="masthead">
-		<div class="mainSlider">
-			<ul class="slideshow">
-				<li>
-					<span>
-						<div class="slider-container slider-content">
-                        <div class="slider-section-title">
-							VEDANT GREENS<br> 
-							<h5 class="slider-project-detail">Residential | Matar, Kheda</h5>
-							<h6 class="slider-project-detail">2 &amp; 3 BHK - Luxurious Bungalows</h6>
-                        </div>
-					</div>
-					</span> 
-				</li>
-				
-				<li> 
-					<span>
-					<div class="slider-container slider-content">
-                        <div class="slider-section-title">
-							VEDANT GREENS<br> 
-							<h5 class="slider-project-detail">Residential | Matar, Kheda</h5>
-							<h6 class="slider-project-detail">2 &amp; 3 BHK - Luxurious Bungalows</h6>
-                        </div>
-					</div></span> 
-				</li>
-				
-				<li>
-					<span><div class="slider-container slider-content">
-                        <div class="slider-section-title">
-							VEDANT SCARLETT (Night Vision)<br> 
-							<h5 class="slider-project-detail">Residential | Vastral</h5>
-							<h6 class="slider-project-detail">2 &amp; 3 BHK Elegance Living</h6>
-                        </div>
-					</div></span> 
-				</li>
-				
-				<li> 
-					<span>
-					<div class="slider-container slider-content">
-                        <div class="slider-section-title">
-							VEDANT SCARLETT (Front Gate)<br> 
-							<h5 class="slider-project-detail">Residential | Vastral</h5>
-							<h6 class="slider-project-detail">2 &amp; 3 BHK Elegance Living</h6>
-                        </div>
-					</div>
-					</span> 
-				</li>
-				
-				<li> 
-					<span>
-					<div class="slider-container slider-content">
-                        <div class="slider-section-title">
-							VEDANT SCARLETT (Terrace Area)<br> 
-							<h5 class="slider-project-detail">Residential | Vastral</h5>
-							<h6 class="slider-project-detail">2 &amp; 3 BHK Elegance Living</h6>
-                        </div>
-					</div>	</span> 
-				</li>
-			</ul>
-		</div>
-
-		<div class="learnMoreBlock">
-			<span class="learnMoreBlockContent">
-				Recent Launches
-				<br /><br />
-				<i class="fas fa-chevron-down clicktoLearnMore slide-top"></i>
-			</span>
-		</div>
-	</header>
-
-	<section id="about" class="about-us">
+	<section id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="overview-title wow fadeInUp" data-wow-delay="0.4s">
-						<h1>WHO WE ARE!
-						</h1>
-						<div class="line-view"></div>
+						<h1 style="color:#fff;">STAY CONNECTED!</h1>
+						<div class="line-view" style="background-color:#fff;"></div>
 					</div>
 				</div>
 				
 				<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.4s">
-					<img src="img/about-us.jpg" class="img-fluid">
+					<form id="contactForm" method="post" action="send_form_email.php">
+						<div class="row">
+							<div class="col-md-12 contat-form">
+								<div class="form-group">
+									<input class="form-control" id="txtName" name="txtName" type="text" placeholder="Your Name *" required="required"
+										data-validation-required-message="Please enter your name." aria-invalid="false">
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group">
+									<input class="form-control" id="txtEmail" name="txtEmail" type="email" placeholder="Your Email *"
+										required="required" data-validation-required-message="Please enter your email address."
+										aria-invalid="false">
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group">
+									<input class="form-control" id="txtPhone" name="txtPhone" type="tel" placeholder="Your Phone *" required="required"
+										data-validation-required-message="Please enter your phone number.">
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group">
+									<textarea rows="6" class="form-control" id="txtMsg" name="txtMsg" placeholder="Your Message *"
+										required="required" data-validation-required-message="Please enter a message."
+										aria-invalid="false"></textarea>
+									<p class="help-block text-danger"></p>
+								</div>
+
+								<div class="download contact-btn">
+									<a href="javascript:{}" onclick="document.getElementById('contactForm').submit(); return false;">Submit</a>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
 				
 				<div class="col-md-6 wow fadeInRight" data-wow-delay="0.4s">
 					<div class="about-title">
-						<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-							industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and
-							typesetting industry.</p>
-						<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-							industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and
-							typesetting industry.</p>
-						<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-							industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and
-							typesetting industry.</p>
+						<h2 style="color:#fec503;">Vedant Groups of Company</h2>
+						<label style="color:#fff; font-weight:800;"><i class="fa fa-building"></i>&nbsp;Address:</label>
+						<p style="color:#fff;">
+							Opp. Arpan School, Nr. BAPS Temple,<br />
+							Nirat Cross Road, Vastral, Ahmedabad.
+						</p>
+						<label style="color:#fff; font-weight:800;"><i class="fa fa-mobile"></i>&nbsp;Mobile:</label> <span style="color:#fff;">9727703527</span>
+						<br />
+						<label style="color:#fff; font-weight:800;"><i class="fa fa-envelope"></i>&nbsp;Email:</label> <span style="color:#fff;">info@vedantgroups.com</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="commercial">
-		<div class="container">
-			<div class="col-md-12">
-				<div class="overview-title wow fadeInUp" data-wow-delay="0.4s">
-					<h1>COMMERCIAL PROJECTS
-					</h1>
-					<div class="line-view"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="commerical-projects">
-						<div class="box wow fadeInUp" data-wow-delay="0.6s">
-							<div class="overlay-image">
-								<a href="coming-soon.html">
-									<img src=" img/coming-soon-1.png" class="img-fluid">
-									<div class="text">We are currently working on something awesome. Stay tuned!</div>
-								</a>
-							</div>
-							
-							<div class="box-content">
-								<h3 class="title">Coming Soon</h3>
-								<span class="post">Opposite Sankalp School, Nikol</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="residential">
-		<div class="container">
-			<div class="col-md-12">
-				<div class="overview-title wow fadeInUp" data-wow-delay="0.4s">
-					<h1>RESIDENTIAL PROJECTS
-					</h1>
-					<div class="line-view"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="commerical-projects">
-						<div class="box wow fadeInUp" data-wow-delay="0.6s">
-							<img src=" img/residential/vedant-greens/1.jpg" class="img-fluid">
-							<div class="box-content">
-								<h3 class="title">Vedant Greens</h3>
-								<span class="post">2 &amp; 3 BHK Luxurious Bungalows</span>
-								<a href="vedant-greens.html"><span class="btnExplore">EXPLORE</span></a>
-							</div>
-						</div>
-						<div class="title-box">
-							<p>VEDANT GREENS</p>
-							<div class="project-header-bottom-line"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="commerical-projects">
-						<div class="box wow fadeInUp" data-wow-delay="0.8s">
-							<img src=" img/residential/vedant-scarlett/side-view-right.jpg" class="img-fluid">
-							<div class="box-content">
-								<h3 class="title">Vedant Scarlett</h3>
-								<span class="post">2 &amp; 3 BHK Elegance Living</span>
-								<a href="vedant-scarlett.html"><span class="btnExplore">EXPLORE</span></a>
-							</div>
-						</div>
-						<div class="title-box">
-							<p>VEDANT SCARLETT</p>
-							<div class="project-header-bottom-line"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
+	
 	<div class='footerDiv'>
 		<div class="container">
 			<div class="row wow fadeInLeft" data-wow-delay="0.4s">

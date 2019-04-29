@@ -29,7 +29,6 @@
 	<link href="css/custom.css" rel="stylesheet">
 	
 	<link rel="stylesheet" href="css/swiper.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<style>
 		dl, ol, ul{
@@ -78,11 +77,11 @@
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#team">Redevelopment</a>
+						<a class="nav-link js-scroll-trigger" href="#">Redevelopment</a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#contact">Joint Development</a>
+						<a class="nav-link js-scroll-trigger" href="#">Joint Development</a>
 					</li>
 
 					<li class="nav-item">
@@ -421,33 +420,35 @@
 			<div class="row">
 				<div class="col-md-2"></div>
 				<div class="col-md-8 contat-form">
-					<div class="form-group">
-						<input class="form-control" id="name" type="text" placeholder="Your Name *" required="required"
-							data-validation-required-message="Please enter your name." aria-invalid="false">
-						<p class="help-block text-danger"></p>
-					</div>
-					<div class="form-group">
-						<input class="form-control" id="email" type="email" placeholder="Your Email *"
-							required="required" data-validation-required-message="Please enter your email address."
-							aria-invalid="false">
-						<p class="help-block text-danger"></p>
-					</div>
-					<div class="form-group">
-						<input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required"
-							data-validation-required-message="Please enter your phone number.">
-						<p class="help-block text-danger"></p>
-					</div>
-					<div class="form-group">
-						<textarea rows="6" class="form-control" id="message" placeholder="Your Message *"
-							required="required" data-validation-required-message="Please enter a message."
-							aria-invalid="false"></textarea>
-						<p class="help-block text-danger"></p>
-					</div>
-
-					<div class="download contact-btn">
-							<a href="#">Submit</a>
-							<a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download brochure</a>
+					<form id="enquiryForm" method="post" action="send_form_email.php">
+						<div class="form-group">
+							<input class="form-control" id="txtName" name="txtName" type="text" placeholder="Your Name *" required="required"
+								data-validation-required-message="Please enter your name." aria-invalid="false">
+							<p class="help-block text-danger"></p>
 						</div>
+						<div class="form-group">
+							<input class="form-control" id="txtEmail" name="txtEmail" type="email" placeholder="Your Email *"
+								required="required" data-validation-required-message="Please enter your email address."
+								aria-invalid="false">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="txtPhone" name="txtPhone" type="tel" placeholder="Your Phone *" required="required"
+								data-validation-required-message="Please enter your phone number.">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group">
+							<textarea rows="6" class="form-control" id="txtMsg" name="txtMsg" placeholder="Your Message *"
+								required="required" data-validation-required-message="Please enter a message."
+								aria-invalid="false"></textarea>
+							<p class="help-block text-danger"></p>
+						</div>
+
+						<div class="download">
+							<a href="javascript:{}" onclick="document.getElementById('enquiryForm').submit(); return false;">Submit</a>
+							<a href="brochures/vedant_greens.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Download brochure</a>
+						</div>
+					</form>
 				</div>
 			</div>
 
@@ -500,7 +501,7 @@
 						</div>
 
 						<div class="footer-option">
-							<a href="#">
+							<a href="contact-us.html">
 								<span class="footer-item">
 									CONTACT <i class="fa fa-angle-right footer-icon"></i>
 								</span>
@@ -590,9 +591,7 @@
 
 <script src="js/swiper.min.js"></script>
 
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsob6LM9dIrrLrsoiamDzkJcvV-9-wbTA&callback=initMap">
-    </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsob6LM9dIrrLrsoiamDzkJcvV-9-wbTA&callback=initMap"></script>
 
 <script>
 	 function initMap() {
