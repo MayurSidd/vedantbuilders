@@ -6,16 +6,16 @@
 			bottom:30% !important;
 		}
 		
-		.slider-container.slider-content {
-			bottom: 30%;
-			left: 38%;
-			top: unset;
-			text-align: left;
-			z-index:1;
-		}
+		/* .slider-container.slider-content { */
+			/* bottom: 30%; */
+			/* left: 38%; */
+			/* top: unset; */
+			/* text-align: left; */
+			/* z-index:1; */
+		/* } */
 		
 		.slider-section-title{
-			border-left:none;
+			/* border-left:none; */
 			padding:15px;
 			text-align:center;
 			font-size:30px;
