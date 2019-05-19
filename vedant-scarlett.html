@@ -23,7 +23,6 @@
     <link href="css/lightbox.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
     <style>
         dl, ol, ul {
@@ -44,21 +43,10 @@
 
         @media screen and (max-width: 992px) {
             .gallery-thumbnails-img {
-                min-height: 160px;
+                min-height: 250px;
                 min-width: 160px;
             }
         }
-
-
-        .mapboxgl-canvas {
-            position: inherit !important;
-        }
-		
-		@media only screen and (max-width: 800px) {
-			.pReraNumber{
-				font-size: 13px !important;
-			}
-		}
     </style>
 </head>
 <body>
@@ -157,7 +145,7 @@
             <a href="#" data-ref="#overviews" class="subNav-menu">OVERVIEW</a>
             <a href="#" data-ref="#gallery" class="subNav-menu">GALLERY</a>
             <a href="brochures/vedant_scarlett.pdf" target="_blank" class="subNav-menu">BROCHURE</a>
-            <!-- <a href="#" data-ref="#map" class="subNav-menu">MAP</a> -->
+            <a href="#" data-ref="#map" class="subNav-menu">MAP</a>
             <a href="#" data-ref="#contactus" class="subNav-menu">ENQUIRY</a>
         </div>
     </div>
@@ -532,23 +520,22 @@
         <a class="lightbox-close" href="#overview"></a>
     </div>
 
-    <!-- <section class="map" id="map"> -->
-    <!-- <div class="container"> -->
-    <!-- <div class="row"> -->
-    <!-- <div class="col-md-12"> -->
-    <!-- <div class="overview-title overview-details wow fadeInUp" data-wow-delay="0.4s"> -->
-    <!-- <h1>MAP</h1> -->
-    <!-- <div class="line-view"></div> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- <div class="map-part wow fadeInUp" data-wow-delay="0.6s"> -->
-    <!-- <iframe -->
-    <!-- src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470029.1604841957!2d72.29955005258641!3d23.019996818380896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C+Gujarat!5e0!3m2!1sen!2sin!4v1555398036331!5m2!1sen!2sin" -->
-    <!-- frameborder="0" style="border:0" allowfullscreen></iframe> -->
-    <!-- </div> -->
-    <!-- </section> -->
+    <section class="map" id="map">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="overview-title overview-details wow fadeInUp" data-wow-delay="0.4s">
+						<h1>MAP</h1>
+						<div class="line-view"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="map-part wow fadeInUp" data-wow-delay="0.6s">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7345.382462731632!2d72.6547762105693!3d22.998379029705514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e872d91e08aff%3A0x414509f6c56cbb9c!2sVEDANT+SCARLETT!5e0!3m2!1sen!2sin!4v1558075900503!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+    </section>
 	
     <section id="contactus">
         <div class="container">
@@ -701,7 +688,6 @@
     </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src='https://static-assets.mapbox.com/gl-pricing/dist/mapbox-gl.js'></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -709,20 +695,7 @@
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <!-- <script> -->
-        <!-- mapboxgl.accessToken = 'pk.eyJ1IjoibWF5dXJzaWRkIiwiYSI6ImNqdjVpNzI2ZjBzdGc0NG56OWF4dDIyb2sifQ.iKhitV5vw3WrB9Va3XLdTw'; -->
-        <!-- var map = new mapboxgl.Map({ -->
-            <!-- container: 'map', -->
-            <!-- style: 'mapbox://styles/mapbox/streets-v11', -->
-            <!-- center: [23.0257, 72.5872], -->
-
-            <!-- zoom: 5, -->
-            <!-- marker: { -->
-                <!-- color: 'orange' -->
-            <!-- } -->
-        <!-- }); -->
-    <!-- </script> -->
-
+	
     <script>
         var wow = new WOW({
             boxClass: 'wow',
@@ -747,7 +720,7 @@
 
             $('.learnMoreBlock').on('click', function () {
                 $("html,body").animate({
-                    scrollTop: $(".exploreSection").offset().top - 50
+                    scrollTop: $(".exploreSection").offset().top - 90
                 }, 2000);
             });
         });
@@ -788,19 +761,18 @@
 
                 var section = $(this).attr('data-ref');
                 $("html,body").animate({
-                    scrollTop: $(section).offset().top - 100
+                    scrollTop: $(section).offset().top - 180
                 }, 2000);
             });
 
             var screen_height = ($(window).height() / 1.5) + 'px';
-
             $(".swiper-container").attr("style", 'height:' + screen_height);
         });
 
         window.onscroll = function () { myFunction() };
 
         var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop - 100;
+        var sticky = header.offsetTop - 50;
 
         function myFunction() {
             if (window.pageYOffset > sticky) {

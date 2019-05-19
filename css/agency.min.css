@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight:700;
     font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
 }
-section{
+section{	
     padding:50px 0
 }
 section h2.section-heading{
@@ -33,6 +33,10 @@ section h3.section-subheading{
     section{
         padding:50px 0
     }
+	
+	section#contact{
+		padding:150px 0;
+	}
 }
 .btn{
     font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
@@ -66,7 +70,7 @@ img::-moz-selection{
     background:0 0
 }
 #mainNav{
-    background-color:#212529
+    background-color:lightgray;
 }
 #mainNav .navbar-toggler{
     font-size:12px;
@@ -90,7 +94,7 @@ img::-moz-selection{
     /* padding:.75em 0; */
     letter-spacing:1px;
 	border-bottom:2px solid transparent;
-    color:#fff;
+    color:#000;
     /* font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; */
 	transition:all 0.7s;
 }
@@ -102,7 +106,7 @@ img::-moz-selection{
         -webkit-transition:padding-top .3s,padding-bottom .3s;
         transition:padding-top .3s,padding-bottom .3s;
         border:none;
-        background-color:transparent
+        background-color:rgb(255,255,255,0.7)
     }
     #mainNav .navbar-brand{
         font-size:1.75em;
@@ -115,7 +119,8 @@ img::-moz-selection{
     #mainNav.navbar-shrink{
         padding-top:0;
         padding-bottom:0;
-        background-color:#212529
+        background-color:lightgray;
+		
     }
     #mainNav.navbar-shrink .navbar-brand{
         font-size:1.25em;
@@ -566,7 +571,7 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 .divContact {
 				position: absolute;
 				right: 80px;
-				top: 30px;
+				top: 35px;
 				z-index: 999;
 				height: 55px;
 				transition: right .4s ease 0;
@@ -603,7 +608,7 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 			}
 			}
 			.divContact .close, .divContact .open {
-				color: #fff;
+				color: #000;
 				margin-top: 45px;
 				position: absolute;
 				right: -45px;
@@ -634,7 +639,7 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 				text-transform: uppercase
 			}
 			.call-btn i {
-				color: #f2f2f2;
+				color: #000;
 				font-size: 18px;
 				line-height: 18px
 			}
@@ -651,15 +656,15 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 			
 			@media (min-width:1281px) and (max-width:1366px) {
 				.divContact {
-					top: 9px;
-					right: 60px
+					top: 35px;
+					right: 30px
 				}
 			}
 			
 			@media (min-width:1025px) and (max-width:1280px) {
 				.divContact {
-					right: 30px;
-					top: 9px;
+					right: 20px;
+					top: 35px;
 				}
 			}
 			
@@ -691,7 +696,7 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 				}
 			}
 			
-			@media (max-width:701px){
+			@media (max-width:1230px){
 				.divContact .info-btn.call-btn{display: none;}
 			}
 			

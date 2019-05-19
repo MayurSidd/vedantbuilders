@@ -362,7 +362,7 @@ button.btn.btn-default.filter-button {
     width: 100%;
 }
 section#contact {
-    padding: 50px 0 50px 0;
+    padding: 100px 0 50px 0;
 }
 h2.section-heading.text-uppercase {
     margin: 0 0 40px 0;
@@ -407,7 +407,7 @@ span.footer-item:hover {
     }
 
     .overview-title {
-        margin: 0;
+        /* margin: 0; */
     }
 
     .learnMoreBlock {
